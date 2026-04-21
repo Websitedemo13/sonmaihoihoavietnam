@@ -12,16 +12,16 @@ import hero from "@/assets/lacquer-hero.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "The Gallery · Vũ Gia" },
+      { title: "Thư Viện · Sơn Mài Di Sản" },
       {
         name: "description",
         content:
-          "A digital museum of Vietnamese lacquer masterworks — eggshell, gold leaf, raw resin.",
+          "Bảo tàng số những kiệt tác sơn mài Việt Nam — vỏ trứng, vàng lá, nhựa sơn ta.",
       },
-      { property: "og:title", content: "The Gallery · Vũ Gia" },
+      { property: "og:title", content: "Thư Viện · Sơn Mài Di Sản" },
       {
         property: "og:description",
-        content: "Browse the Maison's curated archive of lacquer masterworks.",
+        content: "Khám phá kho tác phẩm tuyển chọn của Sơn Mài Di Sản.",
       },
     ],
   }),
@@ -40,12 +40,12 @@ type Work = {
 };
 
 const works: Work[] = [
-  { id: 1, title: "Vessel of the Empress", year: "MMXXIII", img: g1, materials: "24k gold leaf · raw lacquer · ebonised wood", concept: "A single vessel, fired in shadow, etched with the gestures of imperial calligraphy. Three years to complete.", edition: "Unique", height: "tall" },
-  { id: 2, title: "Cinnabar Bloom", year: "MMXXII", img: g2, materials: "Cinnabar · gilded inlay · raw son resin", concept: "Crimson laid in seventeen translucent strata, gold tracing the architecture of orchid roots beneath.", edition: "Edition of 3", height: "short" },
-  { id: 3, title: "Midnight Folding Screen", year: "MMXXIV", img: g3, materials: "Lacquer · gold leaf · carved oak frame", concept: "A landscape of mist and pine emerging from absolute black — visible only to the patient eye.", edition: "Unique", height: "tall" },
-  { id: 4, title: "The Eggshell Atlas", year: "MMXXI", img: g4, materials: "Crushed eggshell · raw lacquer", concept: "Ten thousand fragments arranged by hand. A map of the cosmos rendered in the most fragile material on earth.", edition: "Unique", height: "short" },
-  { id: 5, title: "Resin of the Forest", year: "MMXX", img: hero, materials: "Raw son resin · obsidian", concept: "The mirror is not painted. It is grown — through patience, layer, and the quiet of the curing room.", edition: "Edition of 5", height: "wide" },
-  { id: 6, title: "Sovereign Panel", year: "MMXXV", img: panel, materials: "24k gold · cinnabar · eggshell · son", concept: "A single panel summarising the maison's vocabulary. The piece that will define the 2026 Record.", edition: "Unique", height: "tall" },
+  { id: 1, title: "Bình Của Hoàng Hậu", year: "MMXXIII", img: g1, materials: "Vàng lá 24K · sơn ta · gỗ mun hoá", concept: "Một chiếc bình duy nhất, ủ trong bóng tối, khắc lên những nét bút thư pháp hoàng cung. Ba năm để hoàn tất.", edition: "Độc bản", height: "tall" },
+  { id: 2, title: "Đoá Cánh Gián", year: "MMXXII", img: g2, materials: "Cánh gián · khảm vàng · nhựa sơn ta", concept: "Sắc đỏ xếp thành mười bảy lớp trong suốt, vàng lá vẽ kiến trúc rễ lan ẩn bên dưới.", edition: "Phiên bản 3 chiếc", height: "short" },
+  { id: 3, title: "Bình Phong Đêm", year: "MMXXIV", img: g3, materials: "Sơn mài · vàng lá · khung gỗ sồi chạm", concept: "Một phong cảnh sương mù và thông trỗi dậy từ sắc đen tuyệt đối — chỉ hiện hữu với đôi mắt kiên nhẫn.", edition: "Độc bản", height: "tall" },
+  { id: 4, title: "Bản Đồ Vỏ Trứng", year: "MMXXI", img: g4, materials: "Vỏ trứng nghiền · sơn ta", concept: "Mười nghìn mảnh vỡ xếp tay. Một bản đồ vũ trụ vẽ bằng chất liệu mong manh nhất trên đời.", edition: "Độc bản", height: "short" },
+  { id: 5, title: "Nhựa Của Rừng", year: "MMXX", img: hero, materials: "Nhựa sơn ta nguyên chất · obsidian", concept: "Tấm gương không được vẽ. Nó được nuôi — qua kiên nhẫn, qua từng lớp, qua sự tĩnh lặng của phòng ủ.", edition: "Phiên bản 5 chiếc", height: "wide" },
+  { id: 6, title: "Tấm Sơn Vương Giả", year: "MMXXV", img: panel, materials: "Vàng 24K · cánh gián · vỏ trứng · sơn ta", concept: "Một tấm panel cô đọng toàn bộ ngôn ngữ của xưởng. Tác phẩm sẽ định nghĩa Kỷ Lục 2026.", edition: "Độc bản", height: "tall" },
 ];
 
 function GalleryPage() {
@@ -61,15 +61,15 @@ function GalleryPage() {
           <div className="mx-auto flex max-w-[1600px] flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                Catalogue Raisonné · Vol. III
+                Tuyển Tập · Tập III
               </p>
               <h1 className="font-display mt-8 text-5xl uppercase leading-[0.9] text-champagne md:text-7xl lg:text-[6rem]">
-                The <span className="text-shimmer italic">Gallery</span>
+                Thư <span className="text-shimmer italic">Viện</span>
               </h1>
             </div>
             <p className="max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/50">
-              Six masterworks selected from the maison archive. Click any
-              vessel to consult its full provenance.
+              Sáu kiệt tác được tuyển chọn từ kho lưu trữ. Nhấp vào mỗi tác
+              phẩm để xem hồ sơ di sản đầy đủ.
             </p>
           </div>
         </section>
@@ -179,11 +179,11 @@ function GalleryPage() {
                 onClick={() => setActive(null)}
                 className="absolute right-6 top-6 font-sans text-[10px] tracking-eyebrow uppercase text-champagne/50 transition-colors hover:text-champagne"
               >
-                Close ✕
+                Đóng ✕
               </button>
 
               <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                Catalogue N° {String(active.id).padStart(3, "0")} · {active.year}
+                Mã N° {String(active.id).padStart(3, "0")} · {active.year}
               </p>
               <h2 className="font-display mt-6 text-4xl uppercase leading-[1.05] text-champagne md:text-5xl">
                 {active.title}
@@ -194,7 +194,7 @@ function GalleryPage() {
               <div className="space-y-8 text-sm">
                 <div>
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                    Materials
+                    Chất liệu
                   </p>
                   <p className="mt-3 leading-loose tracking-[0.1em] text-champagne/80">
                     {active.materials}
@@ -203,7 +203,7 @@ function GalleryPage() {
 
                 <div>
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                    Concept Statement
+                    Tuyên ngôn ý niệm
                   </p>
                   <p className="mt-3 leading-loose tracking-[0.1em] text-champagne/65">
                     {active.concept}
@@ -212,7 +212,7 @@ function GalleryPage() {
 
                 <div>
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                    Edition
+                    Phiên bản
                   </p>
                   <p className="mt-3 font-display text-lg text-champagne">
                     {active.edition}
@@ -223,10 +223,10 @@ function GalleryPage() {
               <div className="mt-auto flex flex-col gap-4 pt-12">
                 <button className="group relative inline-flex items-center justify-center border border-champagne bg-pitch px-10 py-4 font-sans text-[10px] tracking-luxury uppercase text-champagne transition-all duration-700 hover:bg-champagne hover:text-pitch">
                   <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-champagne/20 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
-                  <span className="relative">Inquire to Acquire</span>
+                  <span className="relative">Liên hệ sở hữu</span>
                 </button>
                 <button className="border border-crimson bg-crimson/10 px-10 py-4 font-sans text-[10px] tracking-luxury uppercase text-champagne/85 transition-colors duration-500 hover:bg-crimson/30">
-                  Request Private Viewing
+                  Đặt lịch xem riêng
                 </button>
               </div>
             </div>

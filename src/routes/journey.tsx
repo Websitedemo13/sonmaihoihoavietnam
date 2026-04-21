@@ -9,17 +9,17 @@ import imgPanel from "@/assets/lacquer-panel.jpg";
 export const Route = createFileRoute("/journey")({
   head: () => ({
     meta: [
-      { title: "The Journey 1924—2030 · Vũ Gia" },
+      { title: "Hành Trình 1924—2030 · Sơn Mài Di Sản" },
       {
         name: "description",
         content:
-          "A century of lacquer, charted in four chapters: Foundation, Record, Expansion, Legacy.",
+          "Một thế kỷ sơn mài, ghi dấu qua bốn chương: Gốc Rễ, Tiếp Nối, Kỷ Lục, Di Sản.",
       },
-      { property: "og:title", content: "The Journey 1924—2030 · Vũ Gia" },
+      { property: "og:title", content: "Hành Trình 1924—2030 · Sơn Mài Di Sản" },
       {
         property: "og:description",
         content:
-          "From the imperial workshops of 1924 to the global Legacy of 2030.",
+          "Từ Cao đẳng Mỹ thuật Đông Dương 1924 đến Di Sản toàn cầu năm 2030.",
       },
     ],
   }),
@@ -29,18 +29,18 @@ export const Route = createFileRoute("/journey")({
 const milestones = [
   {
     year: "1925",
-    label: "Foundation",
-    title: "The First Resin",
-    body: "Master Vũ Văn Khánh opens the maison in Hà Nội. Thirty coats. Ten years to cure. A vow that would outlive him.",
+    label: "Gốc rễ",
+    title: "Lớp nhựa đầu tiên",
+    body: "Trường Cao đẳng Mỹ thuật Đông Dương khai sinh trường phái sơn mài hiện đại. Ba mươi lớp sơn. Mười năm để khô. Một lời nguyền sống lâu hơn người tạo ra nó.",
     img: img1925,
     shape: "rect",
     side: "left",
   },
   {
     year: "2026",
-    label: "The Record",
-    title: "Vietnamese Lacquer Record",
-    body: "The maison enters the official heritage record of Vietnam — a one-hundred-year continuum sealed into national memory.",
+    label: "Kỷ lục",
+    title: "Kỷ Lục Sơn Mài Việt Nam",
+    body: "Sơn Mài Di Sản chính thức ghi danh vào kỷ lục di sản quốc gia — một liên tục trăm năm được niêm phong vào ký ức dân tộc.",
     img: img2026,
     shape: "circle",
     side: "right",
@@ -48,18 +48,18 @@ const milestones = [
   },
   {
     year: "2028",
-    label: "Expansion",
-    title: "Continents Crossed",
-    body: "Permanent exhibitions open in Paris and Tokyo. The lacquer panel is no longer a Vietnamese object — it is a global one.",
+    label: "Khai phá",
+    title: "Vượt Châu Lục",
+    body: "Triển lãm thường trực mở tại Paris và Tokyo. Tấm sơn mài không còn là một vật phẩm Việt Nam — nó trở thành tác phẩm toàn cầu.",
     img: img2028,
     shape: "square",
     side: "left",
   },
   {
     year: "2030",
-    label: "The Legacy",
-    title: "A Century Surrendered",
-    body: "The Vũ Gia Legacy Vault opens. One thousand works enter the public archive. The fire is passed forward.",
+    label: "Di sản",
+    title: "Một Thế Kỷ Trao Lại",
+    body: "Kho Di Sản Sơn Mài Việt Nam mở cửa. Một nghìn tác phẩm bước vào kho lưu trữ công cộng. Ngọn lửa được trao tay tiếp nối.",
     img: imgPanel,
     shape: "orb",
     side: "right",
@@ -76,14 +76,13 @@ function JourneyPage() {
         {/* Header */}
         <section className="px-6 pb-32 text-center">
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-            MCMXXIV — MMXXX · The Journey
+            MCMXXIV — MMXXX · Hành Trình
           </p>
           <h1 className="font-display mx-auto mt-8 max-w-[14ch] text-5xl uppercase leading-[0.95] text-champagne md:text-7xl lg:text-[6.5rem]">
-            One Hundred <span className="text-shimmer">Years</span>
+            Một Trăm <span className="text-shimmer">Năm</span>
           </h1>
           <p className="mx-auto mt-12 max-w-[48ch] text-xs leading-loose tracking-[0.15em] text-champagne/50">
-            Four chapters. A single thread of gold drawn through a century of
-            silence.
+            Bốn chương. Một sợi chỉ vàng kéo xuyên suốt một thế kỷ tĩnh lặng.
           </p>
         </section>
 
@@ -98,7 +97,7 @@ function JourneyPage() {
           </div>
 
           <ul className="space-y-44 md:space-y-52">
-            {milestones.map((m, i) => (
+            {milestones.map((m) => (
               <li
                 key={m.year}
                 className={`relative grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-24`}
@@ -168,7 +167,7 @@ function JourneyPage() {
         {/* Closing */}
         <section className="border-t border-champagne/15 px-6 py-32 text-center">
           <p className="font-display text-2xl uppercase leading-[1.4] text-champagne/70 md:text-3xl">
-            And so the thread <span className="text-shimmer">continues</span>.
+            Và sợi chỉ vàng <span className="text-shimmer">vẫn chảy</span>.
           </p>
         </section>
       </main>

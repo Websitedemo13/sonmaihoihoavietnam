@@ -10,17 +10,17 @@ import { CtaFooter } from "@/components/home/CtaFooter";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Vũ Gia — The 100-Year Era of Lacquer" },
+      { title: "Sơn Mài Di Sản — Kỷ Nguyên Trăm Năm" },
       {
         name: "description",
         content:
-          "A century of Vietnamese lacquer mastery. Maison Vũ Gia preserves the fire of tradition through resin, time, and silence.",
+          "Một thế kỷ tinh hoa sơn mài Việt Nam. Sơn Mài Di Sản gìn giữ ngọn lửa truyền thống qua nhựa sơn, thời gian và tĩnh lặng.",
       },
-      { property: "og:title", content: "Vũ Gia — The 100-Year Era of Lacquer" },
+      { property: "og:title", content: "Sơn Mài Di Sản — Kỷ Nguyên Trăm Năm" },
       {
         property: "og:description",
         content:
-          "Born in 1924, perfected over a century. The definitive archive of Vietnamese lacquer.",
+          "Khai sinh năm 1924, hoàn thiện qua một thế kỷ. Kho lưu trữ chính thức của sơn mài Việt Nam.",
       },
     ],
   }),

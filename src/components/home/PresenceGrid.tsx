@@ -5,35 +5,35 @@ import gallery4 from "@/assets/gallery-4.jpg";
 
 const venues = [
   {
-    place: "Louvre Abu Dhabi",
+    place: "Triển lãm Hà Nội",
     year: "2024",
     img: panel,
     shape: "rounded-full",
     span: "md:col-span-4",
   },
   {
-    place: "Mori Art Museum",
+    place: "Triển lãm Huế",
     year: "2025",
     img: gallery3,
     shape: "rounded-none",
     span: "md:col-span-3",
   },
   {
-    place: "Palais de Tokyo",
+    place: "Triển lãm Đà Nẵng",
     year: "2026",
     img: gallery2,
     shape: "rounded-none",
     span: "md:col-span-5",
   },
   {
-    place: "Hanoi National Museum",
+    place: "Bảo tàng Mỹ thuật VN",
     year: "2027",
     img: gallery4,
     shape: "rounded-full",
     span: "md:col-span-5",
   },
   {
-    place: "Met Fifth Avenue",
+    place: "Triển lãm Quốc tế",
     year: "2028",
     img: panel,
     shape: "rounded-none",
@@ -48,14 +48,14 @@ export function PresenceGrid() {
         <div className="mb-20 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-              Presence · World Stages
+              Hiện diện · Sân Khấu Thế Giới
             </p>
             <h2 className="font-display mt-6 max-w-[16ch] text-4xl uppercase leading-[1] text-champagne md:text-6xl">
-              Exhibited <span className="text-champagne/55 italic">across</span> the world
+              Triển lãm <span className="text-champagne/55 italic">khắp</span> năm châu
             </h2>
           </div>
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-            Five Continents · Twelve Institutions
+            Năm châu lục · Mười hai bảo tàng
           </p>
         </div>
 
