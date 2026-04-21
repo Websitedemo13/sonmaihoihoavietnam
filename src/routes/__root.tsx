@@ -29,11 +29,17 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Vũ Gia — The 100-Year Era of Lacquer" },
+      { title: "SƠN MÀI HỘI HOẠ VIỆT NAM" },
       { name: "description", content: "A century of Vietnamese lacquer mastery — Maison Vũ Gia." },
       { name: "author", content: "Maison Vũ Gia" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "SƠN MÀI HỘI HOẠ VIỆT NAM" },
+      { name: "twitter:title", content: "SƠN MÀI HỘI HOẠ VIỆT NAM" },
+      { property: "og:description", content: "A century of Vietnamese lacquer mastery — Maison Vũ Gia." },
+      { name: "twitter:description", content: "A century of Vietnamese lacquer mastery — Maison Vũ Gia." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d8adbe2a-b05d-4e2b-9a25-faf8f2380957/id-preview-821add81--b0fea285-8c0f-4e0f-a021-2912ba360c9a.lovable.app-1776764887853.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d8adbe2a-b05d-4e2b-9a25-faf8f2380957/id-preview-821add81--b0fea285-8c0f-4e0f-a021-2912ba360c9a.lovable.app-1776764887853.png" },
     ],
     links: [
       {
