@@ -1,11 +1,11 @@
 import { Link } from "@tanstack/react-router";
 
 const links = [
-  { to: "/", label: "Maison" },
-  { to: "/journey", label: "The Journey" },
-  { to: "/gallery", label: "The Gallery" },
-  { to: "/journal", label: "The Journal" },
-  { to: "/contact", label: "The Inner Circle" },
+  { to: "/", label: "Giới thiệu" },
+  { to: "/journey", label: "Hành trình" },
+  { to: "/gallery", label: "Thư viện" },
+  { to: "/journal", label: "Tin tức" },
+  { to: "/contact", label: "Liên hệ" },
 ] as const;
 
 export function SiteHeader() {
@@ -15,15 +15,15 @@ export function SiteHeader() {
         <Link to="/" className="group flex items-center gap-4">
           <div className="relative flex size-10 items-center justify-center border border-crimson bg-crimson/10 transition-colors duration-700 group-hover:bg-crimson/25">
             <span className="font-display text-sm font-bold tracking-widest text-champagne">
-              V
+              S
             </span>
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-serif-cap text-[10px] text-champagne">
-              Vũ Gia
+              Sơn Mài Di Sản
             </span>
             <span className="mt-1 font-sans text-[8px] tracking-eyebrow text-champagne/40 uppercase">
-              Est. 1924
+              Kỷ Nguyên · MCMXXIV
             </span>
           </div>
         </Link>
@@ -43,7 +43,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40 lg:block">
-          Hà Nội — Paris
+          Hà Nội — Việt Nam
         </div>
       </div>
     </header>

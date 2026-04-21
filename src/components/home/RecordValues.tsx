@@ -1,21 +1,21 @@
 const values = [
   {
     n: "I",
-    label: "Heritage",
-    title: "One Hundred Years",
-    body: "From the imperial workshops of 1924 to the dim ateliers of today — an unbroken thread of resin, patience, and inherited gesture.",
+    label: "Di sản",
+    title: "Một Trăm Năm",
+    body: "Từ Cao đẳng Mỹ thuật Đông Dương 1924 đến những xưởng sơn mài hôm nay — một mạch chảy không gián đoạn của nhựa sơn, kiên nhẫn và bàn tay được truyền nghề.",
   },
   {
     n: "II",
-    label: "Unique Identity",
-    title: "Sơn Mài Vietnam",
-    body: "Eggshell, cinnabar, gilded leaf laid in seventy translucent strata. A material vocabulary belonging to one country alone.",
+    label: "Bản sắc độc bản",
+    title: "Sơn Mài Việt Nam",
+    body: "Vỏ trứng, son, vàng lá xếp thành bảy mươi lớp trong suốt. Một ngôn ngữ vật liệu chỉ thuộc về một dân tộc duy nhất.",
   },
   {
     n: "III",
-    label: "Global Recognition",
-    title: "Recorded Mastery",
-    body: "Archived at the Louvre, exhibited in Tokyo, sealed into the Vietnamese Lacquer Record of 2026 — a craft elevated to canon.",
+    label: "Vinh danh quốc tế",
+    title: "Kỷ Lục Trăm Năm",
+    body: "Lưu dấu tại Louvre, triển lãm tại Tokyo, ghi danh vào Kỷ lục Sơn mài Việt Nam 2026 — một nghề thủ công được nâng lên thành kinh điển.",
   },
 ];
 
@@ -26,15 +26,15 @@ export function RecordValues() {
         <div className="mb-24 flex flex-col items-start gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-              Record · Three Pillars
+              Kỷ Lục · Ba Trụ Cột
             </p>
             <h2 className="font-display mt-6 max-w-[18ch] text-4xl uppercase leading-[1] text-champagne md:text-6xl">
-              The Values <span className="text-champagne/55">we keep</span>
+              Giá Trị <span className="text-champagne/55">chúng tôi gìn giữ</span>
             </h2>
           </div>
           <p className="max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/50">
-            What survives a century is not technique. It is intention — coded
-            into matter, carried by hands that know exactly when to stop.
+            Điều sống sót qua một thế kỷ không phải là kỹ thuật. Đó là ý chí —
+            được mã hoá vào vật chất, mang theo bởi bàn tay biết khi nào phải dừng.
           </p>
         </div>
 

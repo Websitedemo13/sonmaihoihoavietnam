@@ -7,7 +7,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Raw black lacquer resin catching a single beam of gold light"
+          alt="Nhựa sơn ta đen tuyền phản chiếu một tia ánh vàng"
           className="h-full w-full object-cover opacity-60"
           width={1920}
           height={1080}
@@ -34,7 +34,7 @@ export function Hero() {
             >
               <span className="block h-px w-8 bg-crimson" />
               <span className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                A Century of Shadows · 1924 — 2030
+                Một Thế Kỷ Trong Bóng Tối · 1924 — 2030
               </span>
             </div>
 
@@ -43,13 +43,13 @@ export function Hero() {
               style={{ animation: "blur-in 1.6s 0.3s both" }}
             >
               <span className="block tracking-tight text-champagne/95">
-                The 100-Year
+                Kỷ Nguyên
               </span>
               <span className="ml-12 block tracking-tight text-champagne/55 lg:ml-32">
-                Era Of
+                Trăm Năm
               </span>
               <span className="text-shimmer block tracking-tight">
-                Lacquer
+                Sơn Mài
               </span>
             </h1>
 
@@ -57,9 +57,9 @@ export function Hero() {
               className="mt-16 ml-12 max-w-[44ch] text-xs leading-[2.2] tracking-[0.15em] text-champagne/55 lg:ml-32 lg:text-sm"
               style={{ animation: "fade-up 1.2s 1s both" }}
             >
-              Thirty coats of raw sap. A decade to cure in darkness. We do not
-              paint surfaces — we cultivate mirrors that reflect the weight of
-              time.
+              Ba mươi lớp sơn ta. Một thập kỷ ủ trong bóng tối. Chúng tôi
+              không vẽ lên bề mặt — chúng tôi nuôi dưỡng những tấm gương
+              phản chiếu sức nặng của thời gian.
             </p>
 
             <div
@@ -68,7 +68,7 @@ export function Hero() {
             >
               <button className="group flex items-center gap-6 font-sans text-[9px] tracking-luxury uppercase text-champagne/75 transition-colors duration-700 hover:text-champagne">
                 <span className="block h-px w-16 bg-champagne/30 transition-all duration-700 group-hover:w-32 group-hover:bg-champagne" />
-                Unveil the Collection
+                Khám phá tác phẩm
               </button>
             </div>
           </div>
@@ -102,7 +102,7 @@ export function Hero() {
             </div>
 
             <p className="mt-6 font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-              Plate N° 042 · Cinnabar & Pitch
+              Tác phẩm N° 042 · Cánh Gián & Sơn Then
             </p>
           </div>
         </div>
@@ -112,12 +112,12 @@ export function Hero() {
           <div className="flex items-end gap-3">
             <div className="h-16 w-px bg-gradient-to-t from-champagne via-champagne/50 to-transparent" />
             <span className="font-sans text-[8px] tracking-eyebrow uppercase text-champagne/50 [writing-mode:vertical-rl]">
-              Scroll
+              Cuộn xuống
             </span>
           </div>
           <div className="text-right font-sans text-[8px] tracking-eyebrow uppercase text-champagne/30">
-            <p>Atelier · Hà Nội</p>
-            <p className="mt-1">Galerie · Paris</p>
+            <p>Xưởng · Hà Nội</p>
+            <p className="mt-1">Triển lãm · Toàn cầu</p>
           </div>
         </div>
       </div>

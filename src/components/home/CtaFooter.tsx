@@ -9,17 +9,17 @@ export function CtaFooter() {
 
       <div className="relative mx-auto max-w-3xl text-center">
         <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-          Invitation
+          Lời Mời
         </p>
 
         <h2 className="font-display mt-10 text-4xl uppercase leading-[1.05] text-champagne md:text-6xl lg:text-[5rem]">
-          Join the <br />
-          <span className="text-shimmer italic">next century</span>
+          Đồng hành <br />
+          <span className="text-shimmer italic">Trăm năm tới</span>
         </h2>
 
         <p className="mx-auto mt-12 max-w-[42ch] text-xs leading-loose tracking-[0.15em] text-champagne/55 md:text-sm">
-          From 2026 to 2030, Maison Vũ Gia opens its archive to a small circle
-          of patrons. Acquisitions, private viewings, and unreleased works.
+          Từ 2026 đến 2030, Sơn Mài Di Sản mở kho lưu trữ cho một vòng tròn
+          nhỏ những nhà sưu tầm. Sở hữu, xem riêng và những tác phẩm chưa công bố.
         </p>
 
         <div className="mt-20 flex flex-col items-center gap-8">
@@ -30,13 +30,13 @@ export function CtaFooter() {
             {/* The shimmering gold seal button */}
             <span className="relative inline-flex items-center gap-6 border border-champagne bg-pitch px-12 py-5 font-sans text-[10px] tracking-luxury uppercase text-champagne transition-all duration-700 hover:bg-champagne hover:text-pitch">
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-champagne/30 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
-              <span className="relative">Request Invitation</span>
+              <span className="relative">Gửi lời mời</span>
               <span className="relative font-display">→</span>
             </span>
           </Link>
 
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/35">
-            By appointment only · No catalogues distributed
+            Chỉ tiếp khách theo lịch hẹn · Không phát hành catalogue
           </p>
         </div>
       </div>
