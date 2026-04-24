@@ -1,6 +1,6 @@
 export function EssenceQuote() {
   return (
-    <section className="relative bg-pitch px-6 py-40 md:py-56">
+    <section className="relative bg-pitch/30 backdrop-blur-[1px] px-6 py-40 md:py-56">
       <div className="mx-auto max-w-5xl text-center">
         <div className="mx-auto mb-16 flex items-center justify-center gap-4">
           <span className="block h-px w-12 bg-champagne/40" />

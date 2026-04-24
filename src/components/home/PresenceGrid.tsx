@@ -43,7 +43,7 @@ const venues = [
 
 export function PresenceGrid() {
   return (
-    <section className="relative bg-pitch px-6 py-32 md:py-44">
+    <section className="relative bg-pitch/30 backdrop-blur-[1px] px-6 py-32 md:py-44">
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-20 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>

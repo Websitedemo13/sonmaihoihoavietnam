@@ -21,7 +21,7 @@ const values = [
 
 export function RecordValues() {
   return (
-    <section className="relative border-y border-champagne/15 bg-pitch px-6 py-32 md:py-44">
+    <section className="relative border-y border-champagne/15 bg-pitch/40 backdrop-blur-[1px] px-6 py-32 md:py-44">
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-24 flex flex-col items-start gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
