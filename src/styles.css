@@ -85,35 +85,35 @@
 
 :root {
   --radius: 0;
-  /* Warm charcoal — sáng hơn pitch black, vẫn giữ chiều sâu lacquer */
-  --pitch: oklch(0.18 0.015 45);
-  /* Copper-gold ánh kim — sáng & bão hoà hơn để nổi bật trên nền sáng */
-  --champagne: oklch(0.82 0.16 65);
-  --champagne-soft: oklch(0.92 0.1 70);
-  /* Burnt copper seal — điểm nhấn ấm, tương phản mạnh */
-  --crimson: oklch(0.55 0.18 40);
-  --crimson-deep: oklch(0.42 0.16 38);
-  --ash: oklch(0.6 0.02 55);
+  /* Warm cocoa-charcoal — sáng rõ, vẫn giữ chiều sâu lacquer */
+  --pitch: oklch(0.28 0.022 50);
+  /* Copper-gold ánh kim sáng */
+  --champagne: oklch(0.86 0.17 70);
+  --champagne-soft: oklch(0.94 0.11 75);
+  /* Burnt copper seal */
+  --crimson: oklch(0.6 0.2 42);
+  --crimson-deep: oklch(0.48 0.18 40);
+  --ash: oklch(0.65 0.025 60);
 
-  --background: oklch(0.16 0.012 45);
-  --foreground: oklch(0.96 0.03 75);
-  --card: oklch(0.21 0.018 45);
-  --card-foreground: oklch(0.96 0.03 75);
-  --popover: oklch(0.21 0.018 45);
-  --popover-foreground: oklch(0.96 0.03 75);
-  --primary: oklch(0.82 0.16 65);
-  --primary-foreground: oklch(0.14 0.01 45);
-  --secondary: oklch(0.24 0.022 45);
-  --secondary-foreground: oklch(0.96 0.03 75);
-  --muted: oklch(0.24 0.022 45);
-  --muted-foreground: oklch(0.7 0.05 65);
-  --accent: oklch(0.55 0.18 40);
-  --accent-foreground: oklch(0.98 0.04 75);
-  --destructive: oklch(0.55 0.2 35);
-  --destructive-foreground: oklch(0.98 0.04 75);
-  --border: oklch(0.82 0.16 65 / 0.28);
-  --input: oklch(0.82 0.16 65 / 0.4);
-  --ring: oklch(0.82 0.16 65);
+  --background: oklch(0.26 0.02 50);
+  --foreground: oklch(0.97 0.035 78);
+  --card: oklch(0.32 0.025 50);
+  --card-foreground: oklch(0.97 0.035 78);
+  --popover: oklch(0.32 0.025 50);
+  --popover-foreground: oklch(0.97 0.035 78);
+  --primary: oklch(0.86 0.17 70);
+  --primary-foreground: oklch(0.2 0.015 50);
+  --secondary: oklch(0.34 0.028 50);
+  --secondary-foreground: oklch(0.97 0.035 78);
+  --muted: oklch(0.34 0.028 50);
+  --muted-foreground: oklch(0.78 0.06 70);
+  --accent: oklch(0.6 0.2 42);
+  --accent-foreground: oklch(0.98 0.04 78);
+  --destructive: oklch(0.6 0.22 38);
+  --destructive-foreground: oklch(0.98 0.04 78);
+  --border: oklch(0.86 0.17 70 / 0.32);
+  --input: oklch(0.86 0.17 70 / 0.45);
+  --ring: oklch(0.86 0.17 70);
 }
 
 @layer base {
@@ -133,6 +133,81 @@
     letter-spacing: 0.005em;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Lacquer wave — fixed copper-gold flowing wave across all pages */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      /* upper-left dark void */
+      radial-gradient(
+        ellipse 90% 70% at 25% 20%,
+        oklch(0.12 0.015 45 / 0.85),
+        transparent 60%
+      ),
+      /* main copper wave — diagonal sweep */
+      radial-gradient(
+        ellipse 120% 35% at 70% 75%,
+        oklch(0.7 0.2 50 / 0.55),
+        oklch(0.5 0.18 45 / 0.3) 35%,
+        transparent 65%
+      ),
+      /* secondary gold highlight along the wave */
+      radial-gradient(
+        ellipse 80% 20% at 60% 70%,
+        oklch(0.88 0.18 75 / 0.45),
+        transparent 55%
+      ),
+      /* gold dust cluster bottom-right */
+      radial-gradient(
+        circle 30% at 90% 95%,
+        oklch(0.85 0.2 78 / 0.4),
+        transparent 60%
+      ),
+      /* dark base wash */
+      linear-gradient(
+        135deg,
+        oklch(0.18 0.018 48) 0%,
+        oklch(0.32 0.025 52) 60%,
+        oklch(0.22 0.02 48) 100%
+      );
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* Gold particle dust — fine speckled overlay */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle at 12% 18%, oklch(0.92 0.18 78 / 0.7) 0.5px, transparent 1.5px),
+      radial-gradient(circle at 88% 12%, oklch(0.88 0.18 75 / 0.6) 0.5px, transparent 1.5px),
+      radial-gradient(circle at 35% 65%, oklch(0.82 0.18 70 / 0.5) 0.4px, transparent 1.2px),
+      radial-gradient(circle at 72% 45%, oklch(0.9 0.18 75 / 0.5) 0.5px, transparent 1.4px),
+      radial-gradient(circle at 18% 88%, oklch(0.85 0.18 72 / 0.6) 0.6px, transparent 1.6px),
+      radial-gradient(circle at 95% 78%, oklch(0.92 0.2 78 / 0.7) 0.5px, transparent 1.5px),
+      radial-gradient(circle at 50% 30%, oklch(0.78 0.16 68 / 0.4) 0.4px, transparent 1.2px),
+      radial-gradient(circle at 8% 55%, oklch(0.86 0.18 72 / 0.5) 0.4px, transparent 1.3px);
+    background-size:
+      280px 280px, 320px 320px, 240px 240px, 360px 360px,
+      300px 300px, 260px 260px, 220px 220px, 340px 340px;
+    background-attachment: fixed;
+    opacity: 0.65;
+    mix-blend-mode: screen;
+  }
+
+  /* Ensure all content sits above the fixed background layers */
+  body > * {
+    position: relative;
+    z-index: 1;
   }
 
   ::selection {
