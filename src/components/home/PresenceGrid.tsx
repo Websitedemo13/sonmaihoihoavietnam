@@ -1,43 +1,25 @@
 import panel from "@/assets/lacquer-panel.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
 
 const venues = [
   {
     place: "Triển lãm Hà Nội",
-    year: "2024",
+    note: "Không gian đương đại tại trung tâm Hà Nội — nơi nghệ thuật gặp gỡ đời sống đô thị hiện đại.",
     img: panel,
     shape: "rounded-full",
-    span: "md:col-span-4",
   },
   {
     place: "Triển lãm Huế",
-    year: "2025",
+    note: "Di sản và truyền thống được tôn vinh trong không gian bảo tàng mang đậm hồn Việt cổ kính.",
     img: gallery3,
     shape: "rounded-none",
-    span: "md:col-span-3",
   },
   {
     place: "Triển lãm Đà Nẵng",
-    year: "2026",
+    note: "Nơi giao thoa giữa ngôn ngữ sơn mài truyền thống và tư duy thẩm mỹ đương đại toàn cầu.",
     img: gallery2,
-    shape: "rounded-none",
-    span: "md:col-span-5",
-  },
-  {
-    place: "Bảo tàng Mỹ thuật VN",
-    year: "2027",
-    img: gallery4,
     shape: "rounded-full",
-    span: "md:col-span-5",
-  },
-  {
-    place: "Triển lãm Quốc tế",
-    year: "2028",
-    img: panel,
-    shape: "rounded-none",
-    span: "md:col-span-7",
   },
 ];
 
@@ -48,22 +30,23 @@ export function PresenceGrid() {
         <div className="mb-20 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-              Hiện diện · Sân Khấu Thế Giới
+              Hiện diện nghệ thuật
             </p>
             <h2 className="font-display mt-6 max-w-[16ch] text-4xl uppercase leading-[1] text-champagne md:text-6xl">
-              Triển lãm <span className="text-champagne/55 italic">khắp</span> năm châu
+              Dấu ấn <span className="text-champagne/55 italic">tại</span> ba miền
             </h2>
           </div>
-          <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-            Năm châu lục · Mười hai bảo tàng
+          <p className="max-w-md font-sans text-[10px] leading-relaxed tracking-[0.12em] text-champagne/45 md:text-right">
+            Ba không gian nghệ thuật tiêu biểu — nơi tác phẩm đối thoại với
+            công chúng và lịch sử
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:gap-8">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-10">
           {venues.map((v, i) => (
             <article
               key={v.place}
-              className={`group relative ${v.span} ${i % 2 === 1 ? "md:mt-16" : ""}`}
+              className={`group relative ${i === 1 ? "md:mt-20" : ""}`}
             >
               <div
                 className={`relative overflow-hidden ${v.shape} aspect-square bg-pitch ring-1 ring-champagne/15 transition-all duration-700 group-hover:ring-champagne`}
@@ -83,13 +66,13 @@ export function PresenceGrid() {
                 <div className="absolute -inset-x-full top-0 h-full w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-champagne/15 to-transparent transition-transform duration-1000 group-hover:translate-x-[300%]" />
               </div>
 
-              <div className="mt-6 flex items-baseline justify-between">
+              <div className="mt-6">
                 <h3 className="font-serif-cap text-xs text-champagne md:text-sm">
                   {v.place}
                 </h3>
-                <span className="font-display text-sm text-champagne/40">
-                  {v.year}
-                </span>
+                <p className="mt-3 text-xs leading-loose tracking-[0.1em] text-champagne/55">
+                  {v.note}
+                </p>
               </div>
             </article>
           ))}
