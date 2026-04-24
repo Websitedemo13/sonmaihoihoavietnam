@@ -6,16 +6,17 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Liên Hệ · Sơn Mài Di Sản" },
+      { title: "Ghi danh vào Lịch sử · Sơn Mài Di Sản" },
       {
         name: "description",
         content:
-          "Một lời mời, chỉ theo lịch hẹn. Kết nối với văn phòng riêng của Sơn Mài Di Sản.",
+          "Mọi hành trình kỷ lục đều bắt đầu từ một cuộc trò chuyện. Hãy cùng chúng tôi viết nên chương tiếp theo của sơn mài Việt Nam.",
       },
-      { property: "og:title", content: "Liên Hệ · Sơn Mài Di Sản" },
+      { property: "og:title", content: "Ghi danh vào Lịch sử · Sơn Mài Di Sản" },
       {
         property: "og:description",
-        content: "Yêu cầu vào kho lưu trữ riêng của Sơn Mài Di Sản.",
+        content:
+          "Kết nối với di sản — Studio Sơn Mài tại Hà Nội. Mở cửa theo lịch hẹn.",
       },
     ],
   }),
@@ -51,15 +52,16 @@ function ContactPage() {
       <main className="relative pt-40">
         <section className="px-6 pb-32 text-center">
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-            Theo lịch hẹn · MMXXVI
+            Ghi danh vào Lịch sử · MMXXVI
           </p>
-          <h1 className="font-display mx-auto mt-8 max-w-[14ch] text-5xl uppercase leading-[0.95] text-champagne md:text-7xl lg:text-[6rem]">
+          <h1 className="font-display mx-auto mt-8 max-w-[16ch] text-5xl uppercase leading-[0.95] text-champagne md:text-7xl lg:text-[6rem]">
             Kết Nối <span className="italic text-shimmer">Di Sản</span>
           </h1>
-          <p className="mx-auto mt-12 max-w-[44ch] text-xs leading-loose tracking-[0.15em] text-champagne/55">
-            Chúng tôi không quảng cáo. Chúng tôi không phát hành catalogue.
-            Chúng tôi trả lời, bằng văn bản, cho những ai gửi lời. Hãy để lại
-            chữ ký của bạn bên dưới.
+          <p className="mx-auto mt-12 max-w-[52ch] text-xs leading-loose tracking-[0.15em] text-champagne/55">
+            "Mọi hành trình kỷ lục đều bắt đầu từ một cuộc trò chuyện. Hãy
+            cùng chúng tôi viết nên chương tiếp theo của sơn mài Việt Nam."
+            Mọi lời nhắn gửi đều được đọc và trân trọng — không có cuộc kết
+            nối nào là nhỏ.
           </p>
         </section>
 
@@ -68,17 +70,16 @@ function ContactPage() {
           <div className="relative border-t border-champagne/15 bg-pitch px-6 py-20 md:px-16 lg:border-r lg:py-32">
             <div className="mx-auto max-w-md">
               <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                Thư từ
+                Đường dây Kết nối
               </p>
               <h2 className="font-display mt-6 text-3xl uppercase leading-[1.1] text-champagne md:text-4xl">
-                Để lại <span className="italic text-champagne/60">dấu ấn</span>
+                Gửi <span className="italic text-champagne/60">tâm huyết</span>
               </h2>
 
               <form onSubmit={handleSubmit} className="mt-16 space-y-10">
                 {[
                   { label: "Danh xưng", id: "name", type: "text" },
-                  { label: "Tổ chức / Đơn vị", id: "house", type: "text" },
-                  { label: "Email · Số điện thoại", id: "email", type: "text" },
+                  { label: "Email / Số điện thoại", id: "email", type: "text" },
                 ].map((f) => (
                   <div key={f.id} className="group relative">
                     <label
@@ -104,7 +105,7 @@ function ContactPage() {
                     htmlFor="message"
                     className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/45 transition-colors group-focus-within:text-champagne"
                   >
-                    Lời nhắn gửi
+                    Lời nhắn gửi · Chia sẻ điều bạn muốn kết nối
                   </label>
                   <textarea
                     id="message"
@@ -120,7 +121,7 @@ function ContactPage() {
                 {/* The Red Lacquer Seal Submit */}
                 <div className="flex items-center justify-between pt-8">
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/35">
-                    Đóng dấu & gửi đi
+                    Gửi tâm huyết
                   </p>
                   <button
                     type="submit"
@@ -148,7 +149,7 @@ function ContactPage() {
                   className="mt-12 text-center font-display text-base uppercase tracking-[0.2em] text-champagne"
                   style={{ animation: "fade-up 1s both" }}
                 >
-                  Dấu triện đã được nhận. Chúng tôi hồi đáp trong vài ngày.
+                  Lời nhắn đã ghi vào lịch sử. Phản hồi trong 24 giờ.
                 </p>
               )}
             </div>
@@ -158,10 +159,10 @@ function ContactPage() {
           <div className="border-t border-champagne/15 bg-pitch px-6 py-20 md:px-16 lg:py-32">
             <div className="mx-auto max-w-md">
               <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                Toạ độ
+                Toạ độ Di sản
               </p>
               <h2 className="font-display mt-6 text-3xl uppercase leading-[1.1] text-champagne md:text-4xl">
-                Tìm <span className="italic text-champagne/60">đến</span>
+                Studio <span className="italic text-champagne/60">Sơn Mài</span>
               </h2>
 
               <div className="mt-16 flex justify-center">
@@ -181,7 +182,7 @@ function ContactPage() {
               <div className="mt-16 grid grid-cols-2 gap-10 text-xs tracking-[0.12em] text-champagne/55">
                 <div>
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                    Studio
+                    Studio Sơn Mài
                   </p>
                   <p className="mt-3 font-serif-cap text-[11px] text-champagne">
                     Hà Nội
@@ -191,12 +192,12 @@ function ContactPage() {
                 </div>
                 <div>
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                    Đường dây
+                    Không gian Số
                   </p>
                   <p className="mt-3 font-serif-cap text-[11px] text-champagne">
-                    Kết nối
+                    Phản hồi 24h
                   </p>
-                  <p className="mt-2">+84 123 456 789</p>
+                  <p className="mt-2">+84 (0) 123 456 789</p>
                   <p className="mt-1">heritage@sonmai.vn</p>
                 </div>
               </div>
