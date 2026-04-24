@@ -34,7 +34,7 @@ export function Hero() {
             >
               <span className="block h-px w-8 bg-crimson" />
               <span className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                Một Thế Kỷ Trong Bóng Tối · 1924 — 2030
+                Sơn Mài Việt Nam · Tĩnh Lặng & Vĩnh Cửu
               </span>
             </div>
 
@@ -43,13 +43,13 @@ export function Hero() {
               style={{ animation: "blur-in 1.6s 0.3s both" }}
             >
               <span className="block tracking-tight text-champagne/95">
-                Kỷ Nguyên
+                Nghệ Thuật
               </span>
               <span className="ml-12 block tracking-tight text-champagne/55 lg:ml-32">
-                Trăm Năm
+                Không Chỉ Được Nhìn
               </span>
               <span className="text-shimmer block tracking-tight">
-                Sơn Mài
+                Cảm Từ Tĩnh Lặng
               </span>
             </h1>
 
@@ -57,9 +57,9 @@ export function Hero() {
               className="mt-16 ml-12 max-w-[44ch] text-xs leading-[2.2] tracking-[0.15em] text-champagne/55 lg:ml-32 lg:text-sm"
               style={{ animation: "fade-up 1.2s 1s both" }}
             >
-              Ba mươi lớp sơn ta. Một thập kỷ ủ trong bóng tối. Chúng tôi
-              không vẽ lên bề mặt — chúng tôi nuôi dưỡng những tấm gương
-              phản chiếu sức nặng của thời gian.
+              Nơi sơn mài Việt Nam chạm đến linh hồn thời đại. Mỗi tác phẩm
+              là một khoảnh khắc vĩnh cửu — được nuôi dưỡng từ nhựa sơn,
+              ánh vàng và sự tĩnh lặng sâu thẳm nhất.
             </p>
 
             <div
@@ -102,7 +102,7 @@ export function Hero() {
             </div>
 
             <p className="mt-6 font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-              Tác phẩm N° 042 · Cánh Gián & Sơn Then
+              The Eternal · N° 01 · 2026
             </p>
           </div>
         </div>

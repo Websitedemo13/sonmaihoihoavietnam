@@ -1,21 +1,21 @@
 const values = [
   {
     n: "I",
-    label: "Di sản",
-    title: "Một Trăm Năm",
-    body: "Từ Cao đẳng Mỹ thuật Đông Dương 1924 đến những xưởng sơn mài hôm nay — một mạch chảy không gián đoạn của nhựa sơn, kiên nhẫn và bàn tay được truyền nghề.",
+    label: "Tầm Nhìn",
+    title: "Bản Đồ Thế Giới",
+    body: "Đưa sơn mài Việt Nam lên bản đồ nghệ thuật thế giới — như một ngôn ngữ độc bản, bền vững và không thể thay thế.",
   },
   {
     n: "II",
-    label: "Bản sắc độc bản",
-    title: "Sơn Mài Việt Nam",
-    body: "Vỏ trứng, son, vàng lá xếp thành bảy mươi lớp trong suốt. Một ngôn ngữ vật liệu chỉ thuộc về một dân tộc duy nhất.",
+    label: "Đam Mê",
+    title: "Lửa Của Di Sản",
+    body: "Gìn giữ di sản qua từng lớp nhựa và ánh vàng. Mỗi giọt sơn ta là một lời thề với những bàn tay đi trước.",
   },
   {
     n: "III",
-    label: "Vinh danh quốc tế",
-    title: "Kỷ Lục Trăm Năm",
-    body: "Lưu dấu tại Louvre, triển lãm tại Tokyo, ghi danh vào Kỷ lục Sơn mài Việt Nam 2026 — một nghề thủ công được nâng lên thành kinh điển.",
+    label: "Bản Sắc",
+    title: "Không Thể Sao Chép",
+    body: "Ngôn ngữ nghệ thuật độc bản — nơi kỹ thuật trăm năm gặp gỡ tư duy thế kỷ XXI để khai sinh một dấu ấn riêng.",
   },
 ];
 
@@ -26,15 +26,15 @@ export function RecordValues() {
         <div className="mb-24 flex flex-col items-start gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-              Kỷ Lục · Ba Trụ Cột
+              Giá Trị Cốt Lõi · Ba Trụ Cột
             </p>
             <h2 className="font-display mt-6 max-w-[18ch] text-4xl uppercase leading-[1] text-champagne md:text-6xl">
-              Giá Trị <span className="text-champagne/55">chúng tôi gìn giữ</span>
+              Tạo ra những <span className="text-champagne/55">giá trị khác biệt</span>
             </h2>
           </div>
           <p className="max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/50">
-            Điều sống sót qua một thế kỷ không phải là kỹ thuật. Đó là ý chí —
-            được mã hoá vào vật chất, mang theo bởi bàn tay biết khi nào phải dừng.
+            Tầm Nhìn — Đam Mê — Bản Sắc. Ba trụ cột định hình mọi nhát cọ,
+            mọi lớp ủ và mọi cuộc đối thoại giữa chất liệu với thời gian.
           </p>
         </div>
 
