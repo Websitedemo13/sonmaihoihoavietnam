@@ -9,17 +9,17 @@ import imgPanel from "@/assets/lacquer-panel.jpg";
 export const Route = createFileRoute("/journey")({
   head: () => ({
     meta: [
-      { title: "Hành Trình 1924—2030 · Sơn Mài Di Sản" },
+      { title: "Hành Trình 2026—2030 · Sơn Mài Di Sản" },
       {
         name: "description",
         content:
-          "Một thế kỷ sơn mài, ghi dấu qua bốn chương: Gốc Rễ, Tiếp Nối, Kỷ Lục, Di Sản.",
+          "Một thập kỷ của sự hoàn mỹ. Năm cột mốc xác lập di sản: Khởi Tạo, Khai Phá, Toả Sáng, Lan Toả, Di Sản.",
       },
-      { property: "og:title", content: "Hành Trình 1924—2030 · Sơn Mài Di Sản" },
+      { property: "og:title", content: "Hành Trình 2026—2030 · Sơn Mài Di Sản" },
       {
         property: "og:description",
         content:
-          "Từ Cao đẳng Mỹ thuật Đông Dương 1924 đến Di Sản toàn cầu năm 2030.",
+          "Năm năm để tạo nên di sản — biến sơn mài truyền thống thành biểu tượng sáng tạo đương đại.",
       },
     ],
   }),
@@ -28,19 +28,19 @@ export const Route = createFileRoute("/journey")({
 
 const milestones = [
   {
-    year: "1925",
-    label: "Gốc rễ",
-    title: "Lớp nhựa đầu tiên",
-    body: "Trường Cao đẳng Mỹ thuật Đông Dương khai sinh trường phái sơn mài hiện đại. Ba mươi lớp sơn. Mười năm để khô. Một lời nguyền sống lâu hơn người tạo ra nó.",
+    year: "2026",
+    label: "Khởi Tạo",
+    title: "Thiết Lập Bản Nguyên",
+    body: "Ra mắt Studio và công bố ngôn ngữ nghệ thuật riêng biệt — nơi nhựa sơn ta gặp gỡ tư duy thị giác đương đại.",
     img: img1925,
     shape: "rect",
     side: "left",
   },
   {
-    year: "2026",
-    label: "Kỷ lục",
-    title: "Kỷ Lục Sơn Mài Việt Nam",
-    body: "Sơn Mài Di Sản chính thức ghi danh vào kỷ lục di sản quốc gia — một liên tục trăm năm được niêm phong vào ký ức dân tộc.",
+    year: "2027",
+    label: "Khai Phá",
+    title: "Chinh Phục Không Gian",
+    body: "Tổ chức chuỗi triển lãm cá nhân đầu tiên và mở rộng vào những bộ sưu tập cao cấp trong nước và khu vực.",
     img: img2026,
     shape: "circle",
     side: "right",
@@ -48,21 +48,30 @@ const milestones = [
   },
   {
     year: "2028",
-    label: "Khai phá",
-    title: "Vượt Châu Lục",
-    body: "Triển lãm thường trực mở tại Paris và Tokyo. Tấm sơn mài không còn là một vật phẩm Việt Nam — nó trở thành tác phẩm toàn cầu.",
+    label: "Toả Sáng",
+    title: "Vinh Quang Quốc Tế",
+    body: "Đạt giải thưởng danh giá và được công nhận trên đấu trường nghệ thuật toàn cầu — sơn mài Việt Nam ghi tên trên bản đồ thế giới.",
     img: img2028,
     shape: "square",
     side: "left",
   },
   {
+    year: "2029",
+    label: "Lan Toả",
+    title: "Kết Nối Di Sản",
+    body: "Hợp tác với các thương hiệu xa xỉ và đưa nghệ thuật sơn mài vào những không gian biểu tượng của thời đại.",
+    img: imgPanel,
+    shape: "rect",
+    side: "right",
+  },
+  {
     year: "2030",
-    label: "Di sản",
-    title: "Một Thế Kỷ Trao Lại",
-    body: "Kho Di Sản Sơn Mài Việt Nam mở cửa. Một nghìn tác phẩm bước vào kho lưu trữ công cộng. Ngọn lửa được trao tay tiếp nối.",
+    label: "Di Sản",
+    title: "Biểu Tượng Vĩnh Cửu",
+    body: "Thành lập bảo tàng cá nhân và khẳng định vị thế của một nghệ sĩ có tầm ảnh hưởng thời đại — di sản được trao lại.",
     img: imgPanel,
     shape: "orb",
-    side: "right",
+    side: "left",
     glow: true,
   },
 ];
@@ -76,13 +85,16 @@ function JourneyPage() {
         {/* Header */}
         <section className="px-6 pb-32 text-center">
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-            MCMXXIV — MMXXX · Hành Trình
+            MMXXVI — MMXXX · Hành Trình Nghệ Thuật
           </p>
-          <h1 className="font-display mx-auto mt-8 max-w-[14ch] text-5xl uppercase leading-[0.95] text-champagne md:text-7xl lg:text-[6.5rem]">
-            Một Trăm <span className="text-shimmer">Năm</span>
+          <h1 className="font-display mx-auto mt-8 max-w-[16ch] text-5xl uppercase leading-[0.95] text-champagne md:text-7xl lg:text-[6.5rem]">
+            Một Thập Kỷ <span className="text-shimmer">Hoàn Mỹ</span>
           </h1>
-          <p className="mx-auto mt-12 max-w-[48ch] text-xs leading-loose tracking-[0.15em] text-champagne/50">
-            Bốn chương. Một sợi chỉ vàng kéo xuyên suốt một thế kỷ tĩnh lặng.
+          <p className="mx-auto mt-12 max-w-[52ch] text-xs leading-loose tracking-[0.15em] text-champagne/55">
+            Năm năm để tạo nên di sản. Trong một thập kỷ tới, chúng tôi
+            biến sơn mài từ một nghệ thuật truyền thống thành biểu tượng
+            của sáng tạo đương đại — mỗi tác phẩm là một câu chuyện, mỗi
+            triển lãm là một sự kiện.
           </p>
         </section>
 
@@ -167,7 +179,7 @@ function JourneyPage() {
         {/* Closing */}
         <section className="border-t border-champagne/15 px-6 py-32 text-center">
           <p className="font-display text-2xl uppercase leading-[1.4] text-champagne/70 md:text-3xl">
-            Và sợi chỉ vàng <span className="text-shimmer">vẫn chảy</span>.
+            Mỗi tác phẩm là một <span className="text-shimmer">câu chuyện</span>.
           </p>
         </section>
       </main>
