@@ -69,7 +69,7 @@ const milestones = [
 
 function JourneyPage() {
   return (
-    <div className="min-h-dvh bg-pitch text-foreground">
+    <div className="min-h-dvh text-foreground">
       <SiteHeader />
 
       <main className="relative pt-40">
