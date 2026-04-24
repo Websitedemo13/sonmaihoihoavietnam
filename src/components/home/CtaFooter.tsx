@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 export function CtaFooter() {
   return (
-    <section className="relative overflow-hidden bg-pitch px-6 py-44 md:py-56">
+    <section className="relative overflow-hidden bg-pitch/30 backdrop-blur-[1px] px-6 py-44 md:py-56">
       {/* Ambient glows */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.04] blur-[120px]" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/40 to-transparent" />

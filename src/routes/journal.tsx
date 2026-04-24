@@ -27,7 +27,7 @@ export const Route = createFileRoute("/journal")({
 
 function JournalPage() {
   return (
-    <div className="min-h-dvh bg-pitch text-foreground">
+    <div className="min-h-dvh text-foreground">
       <SiteHeader />
 
       <main className="overflow-hidden pt-40">

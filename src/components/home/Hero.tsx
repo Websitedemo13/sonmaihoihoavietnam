@@ -2,18 +2,18 @@ import heroImg from "@/assets/lacquer-hero.jpg";
 
 export function Hero() {
   return (
-    <section className="relative min-h-dvh w-full overflow-hidden lacquer-sheen">
+    <section className="relative min-h-dvh w-full overflow-hidden">
       {/* Hero background — wet lacquer */}
       <div className="absolute inset-0">
         <img
           src={heroImg}
           alt="Nhựa sơn ta đen tuyền phản chiếu một tia ánh vàng"
-          className="h-full w-full object-cover opacity-60"
+          className="h-full w-full object-cover opacity-50"
           width={1920}
           height={1080}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-pitch via-pitch/70 to-pitch/30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-pitch via-transparent to-pitch/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-pitch/80 via-pitch/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-pitch/60 via-transparent to-pitch/20" />
       </div>
 
       {/* Ambient gold glow */}
