@@ -9,17 +9,18 @@ export function CtaFooter() {
 
       <div className="relative mx-auto max-w-3xl text-center">
         <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-          Lời Mời
+          Tác phẩm tiêu biểu · The Eternal
         </p>
 
         <h2 className="font-display mt-10 text-4xl uppercase leading-[1.05] text-champagne md:text-6xl lg:text-[5rem]">
-          Đồng hành <br />
-          <span className="text-shimmer italic">Trăm năm tới</span>
+          Khoảnh Khắc <br />
+          <span className="text-shimmer italic">Vĩnh Cửu</span>
         </h2>
 
-        <p className="mx-auto mt-12 max-w-[42ch] text-xs leading-loose tracking-[0.15em] text-champagne/55 md:text-sm">
-          Từ 2026 đến 2030, Sơn Mài Di Sản mở kho lưu trữ cho một vòng tròn
-          nhỏ những nhà sưu tầm. Sở hữu, xem riêng và những tác phẩm chưa công bố.
+        <p className="mx-auto mt-12 max-w-[44ch] text-xs leading-loose tracking-[0.15em] text-champagne/55 md:text-sm">
+          Tác phẩm khai sinh — nơi hành trình bắt đầu. Nhựa sơn và lá vàng
+          hòa quyện thành một bản tuyên ngôn về sự vĩnh cửu, về ánh sáng
+          tìm đến từ bóng tối sâu thẳm nhất.
         </p>
 
         <div className="mt-20 flex flex-col items-center gap-8">
@@ -30,13 +31,13 @@ export function CtaFooter() {
             {/* The shimmering gold seal button */}
             <span className="relative inline-flex items-center gap-6 border border-champagne bg-pitch px-12 py-5 font-sans text-[10px] tracking-luxury uppercase text-champagne transition-all duration-700 hover:bg-champagne hover:text-pitch">
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-champagne/30 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
-              <span className="relative">Gửi lời mời</span>
+              <span className="relative">Khám phá tác phẩm</span>
               <span className="relative font-display">→</span>
             </span>
           </Link>
 
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/35">
-            Chỉ tiếp khách theo lịch hẹn · Không phát hành catalogue
+            Mọi tác phẩm đều được giám định · Gắn mã định danh di sản
           </p>
         </div>
       </div>

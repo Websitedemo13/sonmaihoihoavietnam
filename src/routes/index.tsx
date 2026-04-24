@@ -10,17 +10,17 @@ import { CtaFooter } from "@/components/home/CtaFooter";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sơn Mài Di Sản — Kỷ Nguyên Trăm Năm" },
+      { title: "Sơn Mài Di Sản — Nghệ thuật cảm từ tĩnh lặng" },
       {
         name: "description",
         content:
-          "Một thế kỷ tinh hoa sơn mài Việt Nam. Sơn Mài Di Sản gìn giữ ngọn lửa truyền thống qua nhựa sơn, thời gian và tĩnh lặng.",
+          "Nơi sơn mài Việt Nam chạm đến linh hồn thời đại. Mỗi tác phẩm là một khoảnh khắc vĩnh cửu — nhựa sơn, ánh vàng và sự tĩnh lặng sâu thẳm.",
       },
-      { property: "og:title", content: "Sơn Mài Di Sản — Kỷ Nguyên Trăm Năm" },
+      { property: "og:title", content: "Sơn Mài Di Sản — Nghệ thuật cảm từ tĩnh lặng" },
       {
         property: "og:description",
         content:
-          "Khai sinh năm 1924, hoàn thiện qua một thế kỷ. Kho lưu trữ chính thức của sơn mài Việt Nam.",
+          "Nghệ thuật không chỉ được nhìn — nó được cảm nhận từ trong tĩnh lặng.",
       },
     ],
   }),

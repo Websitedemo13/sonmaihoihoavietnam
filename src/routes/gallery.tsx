@@ -12,16 +12,16 @@ import hero from "@/assets/lacquer-hero.jpg";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Thư Viện · Sơn Mài Di Sản" },
+      { title: "Tác phẩm tiêu biểu · Sơn Mài Di Sản" },
       {
         name: "description",
         content:
-          "Bảo tàng số những kiệt tác sơn mài Việt Nam — vỏ trứng, vàng lá, nhựa sơn ta.",
+          "Sảnh trưng bày di sản sơn mài Việt Nam — Ánh Sáng Trong Vóc và những kiệt tác được giám định, gắn mã định danh di sản.",
       },
-      { property: "og:title", content: "Thư Viện · Sơn Mài Di Sản" },
+      { property: "og:title", content: "Tác phẩm tiêu biểu · Sơn Mài Di Sản" },
       {
         property: "og:description",
-        content: "Khám phá kho tác phẩm tuyển chọn của Sơn Mài Di Sản.",
+        content: "Sảnh trưng bày di sản — Di sản 100 năm · Kỷ lục · Đương đại.",
       },
     ],
   }),
@@ -40,12 +40,12 @@ type Work = {
 };
 
 const works: Work[] = [
-  { id: 1, title: "Bình Của Hoàng Hậu", year: "MMXXIII", img: g1, materials: "Vàng lá 24K · sơn ta · gỗ mun hoá", concept: "Một chiếc bình duy nhất, ủ trong bóng tối, khắc lên những nét bút thư pháp hoàng cung. Ba năm để hoàn tất.", edition: "Độc bản", height: "tall" },
-  { id: 2, title: "Đoá Cánh Gián", year: "MMXXII", img: g2, materials: "Cánh gián · khảm vàng · nhựa sơn ta", concept: "Sắc đỏ xếp thành mười bảy lớp trong suốt, vàng lá vẽ kiến trúc rễ lan ẩn bên dưới.", edition: "Phiên bản 3 chiếc", height: "short" },
-  { id: 3, title: "Bình Phong Đêm", year: "MMXXIV", img: g3, materials: "Sơn mài · vàng lá · khung gỗ sồi chạm", concept: "Một phong cảnh sương mù và thông trỗi dậy từ sắc đen tuyệt đối — chỉ hiện hữu với đôi mắt kiên nhẫn.", edition: "Độc bản", height: "tall" },
-  { id: 4, title: "Bản Đồ Vỏ Trứng", year: "MMXXI", img: g4, materials: "Vỏ trứng nghiền · sơn ta", concept: "Mười nghìn mảnh vỡ xếp tay. Một bản đồ vũ trụ vẽ bằng chất liệu mong manh nhất trên đời.", edition: "Độc bản", height: "short" },
-  { id: 5, title: "Nhựa Của Rừng", year: "MMXX", img: hero, materials: "Nhựa sơn ta nguyên chất · obsidian", concept: "Tấm gương không được vẽ. Nó được nuôi — qua kiên nhẫn, qua từng lớp, qua sự tĩnh lặng của phòng ủ.", edition: "Phiên bản 5 chiếc", height: "wide" },
-  { id: 6, title: "Tấm Sơn Vương Giả", year: "MMXXV", img: panel, materials: "Vàng 24K · cánh gián · vỏ trứng · sơn ta", concept: "Một tấm panel cô đọng toàn bộ ngôn ngữ của xưởng. Tác phẩm sẽ định nghĩa Kỷ Lục 2026.", edition: "Độc bản", height: "tall" },
+  { id: 1, title: "Ánh Sáng Trong Vóc", year: "MMXXVI", img: g1, materials: "Sơn mài truyền thống · Dát vàng 24K · Khảm vỏ trứng", concept: "Tác phẩm đại diện cho sự khởi đầu của hành trình kỷ lục. Sự tương phản giữa nhựa sơn đen thẳm và những lá vàng mỏng manh đại diện cho sức sống bền bỉ của nghệ thuật di sản qua một thế kỷ.", edition: "Độc bản · Mã DS-001", height: "tall" },
+  { id: 2, title: "Đối Thoại Bóng Tối", year: "MMXXV", img: g2, materials: "Cánh gián · khảm vàng · nhựa sơn ta", concept: "Mười bảy lớp sơn ta xếp chồng — một cuộc đối thoại giữa nghệ nhân và bóng tối của phòng ủ. Vàng lá vẽ kiến trúc rễ ẩn bên dưới sắc đỏ trầm.", edition: "Phiên bản 3 chiếc", height: "short" },
+  { id: 3, title: "Bình Phong Sương", year: "MMXXIV", img: g3, materials: "Sơn mài · Vàng lá · Khung gỗ sồi chạm", concept: "Một phong cảnh sương mù và thông trỗi dậy từ sắc đen tuyệt đối — chỉ hiện hữu với đôi mắt kiên nhẫn. Tác phẩm thuộc tuyển tập Di Sản 100 Năm.", edition: "Độc bản", height: "tall" },
+  { id: 4, title: "Bản Đồ Vỏ Trứng", year: "MMXXIII", img: g4, materials: "Vỏ trứng nghiền · Sơn ta · Bột vàng", concept: "Mười nghìn mảnh vỡ xếp tay. Một bản đồ vũ trụ vẽ bằng chất liệu mong manh nhất — vết nứt không bị che giấu, chính là bố cục.", edition: "Độc bản", height: "short" },
+  { id: 5, title: "Nhựa Của Rừng", year: "MMXXII", img: hero, materials: "Nhựa sơn ta nguyên chất · Obsidian", concept: "Tấm gương không được vẽ. Nó được nuôi — qua kiên nhẫn, qua từng lớp, qua sự tĩnh lặng của phòng ủ Phú Thọ.", edition: "Phiên bản 5 chiếc", height: "wide" },
+  { id: 6, title: "Tấm Sơn Vương Giả", year: "MMXXVI", img: panel, materials: "Vàng 24K · Cánh gián · Vỏ trứng · Sơn ta", concept: "Một tấm panel cô đọng toàn bộ ngôn ngữ của xưởng. Tác phẩm đương đại định nghĩa Kỷ Lục 2026 — chứng nhân cho tầm vóc thời đại.", edition: "Độc bản · Mã DS-006", height: "tall" },
 ];
 
 function GalleryPage() {
@@ -61,15 +61,21 @@ function GalleryPage() {
           <div className="mx-auto flex max-w-[1600px] flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                Tuyển Tập · Tập III
+                Sảnh Trưng Bày Di Sản
               </p>
               <h1 className="font-display mt-8 text-5xl uppercase leading-[0.9] text-champagne md:text-7xl lg:text-[6rem]">
-                Thư <span className="text-shimmer italic">Viện</span>
+                Tác Phẩm <span className="text-shimmer italic">Tiêu Biểu</span>
               </h1>
+              <div className="mt-10 flex flex-wrap items-center gap-3 font-sans text-[9px] tracking-eyebrow uppercase">
+                <span className="border border-champagne/40 bg-champagne/10 px-4 py-2 text-champagne">Tất cả</span>
+                <span className="border border-champagne/15 px-4 py-2 text-champagne/55 transition-colors hover:border-champagne/40 hover:text-champagne">Di sản 100 năm</span>
+                <span className="border border-champagne/15 px-4 py-2 text-champagne/55 transition-colors hover:border-champagne/40 hover:text-champagne">Kỷ lục</span>
+                <span className="border border-champagne/15 px-4 py-2 text-champagne/55 transition-colors hover:border-champagne/40 hover:text-champagne">Đương đại</span>
+              </div>
             </div>
             <p className="max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/50">
-              Sáu kiệt tác được tuyển chọn từ kho lưu trữ. Nhấp vào mỗi tác
-              phẩm để xem hồ sơ di sản đầy đủ.
+              Mọi tác phẩm tại đây đều được giám định và gắn mã định danh
+              di sản. Nhấp vào mỗi tác phẩm để xem hồ sơ kỷ lục đầy đủ.
             </p>
           </div>
         </section>
@@ -183,7 +189,7 @@ function GalleryPage() {
               </button>
 
               <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                Mã N° {String(active.id).padStart(3, "0")} · {active.year}
+                Hồ sơ Kỷ lục · {String(active.id).padStart(3, "0")} · {active.year}
               </p>
               <h2 className="font-display mt-6 text-4xl uppercase leading-[1.05] text-champagne md:text-5xl">
                 {active.title}
@@ -194,7 +200,7 @@ function GalleryPage() {
               <div className="space-y-8 text-sm">
                 <div>
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                    Chất liệu
+                    Kỹ thuật & Chất liệu
                   </p>
                   <p className="mt-3 leading-loose tracking-[0.1em] text-champagne/80">
                     {active.materials}
@@ -203,7 +209,7 @@ function GalleryPage() {
 
                 <div>
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                    Tuyên ngôn ý niệm
+                    Hồ sơ kỷ lục của tác phẩm
                   </p>
                   <p className="mt-3 leading-loose tracking-[0.1em] text-champagne/65">
                     {active.concept}
@@ -212,7 +218,7 @@ function GalleryPage() {
 
                 <div>
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                    Phiên bản
+                    Mã định danh di sản
                   </p>
                   <p className="mt-3 font-display text-lg text-champagne">
                     {active.edition}
@@ -226,7 +232,7 @@ function GalleryPage() {
                   <span className="relative">Liên hệ sở hữu</span>
                 </button>
                 <button className="border border-crimson bg-crimson/10 px-10 py-4 font-sans text-[10px] tracking-luxury uppercase text-champagne/85 transition-colors duration-500 hover:bg-crimson/30">
-                  Đặt lịch xem riêng
+                  Xem video quy trình chế tác
                 </button>
               </div>
             </div>

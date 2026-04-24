@@ -9,16 +9,16 @@ import g3 from "@/assets/gallery-3.jpg";
 export const Route = createFileRoute("/journal")({
   head: () => ({
     meta: [
-      { title: "Tin Tức · Sơn Mài Di Sản" },
+      { title: "Sảnh trưng bày Kiến thức · Sơn Mài Di Sản" },
       {
         name: "description",
         content:
-          "Những bài viết từ xưởng vẽ: hậu trường nhựa sơn, người nghệ nhân, và những căn phòng tĩnh lặng.",
+          "Kể chuyện 100 năm · Đối thoại với bóng tối · Giao thoa di sản. Những bài viết chuyên sâu được trình bày như các bức tranh.",
       },
-      { property: "og:title", content: "Tin Tức · Sơn Mài Di Sản" },
+      { property: "og:title", content: "Sảnh trưng bày Kiến thức · Sơn Mài Di Sản" },
       {
         property: "og:description",
-        content: "Biên niên sử về một thế kỷ sơn mài Việt Nam.",
+        content: "Nơi di sản và tầm nhìn tương lai hội tụ.",
       },
     ],
   }),
@@ -37,15 +37,15 @@ function JournalPage() {
             <div className="flex items-center gap-6">
               <span className="block h-px w-12 bg-crimson" />
               <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                Tập IV · Số MMXXVI
+                Khối Cảm Hứng · Số MMXXVI
               </p>
             </div>
             <h1 className="font-display mt-12 text-6xl uppercase leading-[0.85] text-champagne md:text-8xl lg:text-[10rem]">
-              Tin <span className="italic text-shimmer">Tức</span>
+              Sảnh <span className="italic text-shimmer">Kiến Thức</span>
             </h1>
             <p className="mt-12 max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/50">
-              Những bài viết từ căn phòng tĩnh lặng — nơi nhựa sơn ủ và người
-              nghệ nhân biến mất vào chính bàn tay mình.
+              Kể chuyện 100 năm · Đối thoại với bóng tối · Giao thoa di sản —
+              nơi những bài viết chuyên sâu được trình bày như các bức tranh.
             </p>
           </div>
         </section>
@@ -57,16 +57,17 @@ function JournalPage() {
             <article className="grid grid-cols-12 items-center gap-8">
               <div className="col-span-12 md:col-span-5">
                 <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                  Ghi chép · 01
+                  Khối cảm hứng · 01
                 </p>
                 <h2 className="font-display mt-6 text-5xl uppercase leading-[0.95] text-champagne md:text-7xl">
-                  Cạo <br />
-                  <span className="italic text-champagne/60">cây sơn</span>
+                  Nghệ Thuật <br />
+                  <span className="italic text-champagne/60">Uỷ Sơn</span>
                 </h2>
                 <p className="mt-10 max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/55">
-                  Trước bình minh, trong rừng sơn Phú Thọ, một người nghệ nhân
-                  cúi đầu trước <em className="not-italic text-champagne">cây sơn</em> năm mươi tuổi và
-                  hứng từ nó dòng nhựa sẽ — sau một thập kỷ — trở thành tấm gương.
+                  Khám phá quy trình ủ sơn truyền thống — nơi màu sắc được
+                  sinh ra từ <em className="not-italic text-champagne">bóng tối</em>. Ánh sáng
+                  trong sự tĩnh lặng, khi mọi chuyển động dừng lại, ánh sáng
+                  bắt đầu kể chuyện.
                 </p>
                 <button className="mt-12 font-sans text-[9px] tracking-luxury uppercase text-champagne/60 transition-colors hover:text-champagne">
                   Đọc bài →
@@ -86,12 +87,12 @@ function JournalPage() {
                 "
               </span>
               <blockquote className="font-display relative text-3xl leading-[1.4] text-champagne/85 md:text-5xl md:leading-[1.3]">
-                Một lớp sơn mất một ngày để phủ. Một tuần để khô. Một tháng để quên.
+                Sơn mài không vẽ cái ta thấy,
                 <br />
-                Rồi chúng tôi phủ <span className="italic text-shimmer">lớp khác</span>.
+                mà vẽ cái <span className="italic text-shimmer">ta cảm</span>.
               </blockquote>
               <p className="mt-12 font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                Nghệ nhân Lê · Xưởng N° II
+                Tư tưởng từ xưởng vẽ · Sơn Mài Di Sản
               </p>
             </article>
 
@@ -106,15 +107,15 @@ function JournalPage() {
               <div className="col-span-12 md:col-span-5 md:-ml-24 md:mt-32 md:translate-y-12">
                 <div className="bg-pitch p-8 ring-1 ring-champagne/15 md:p-12">
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                    Xưởng vẽ · 02
+                    Bí mật vàng lá · 02
                   </p>
                   <h2 className="font-display mt-6 text-3xl uppercase leading-[1.1] text-champagne md:text-5xl">
-                    Mười Lăm <br /> <span className="italic text-champagne/60">Bàn Tay</span>
+                    Khi Chất Liệu <br /> <span className="italic text-champagne/60">Cất Lời</span>
                   </h2>
                   <p className="mt-8 text-xs leading-loose tracking-[0.12em] text-champagne/55">
-                    Một tấm panel đi qua mười lăm đôi bàn tay trong mười một
-                    tháng. Mỗi bàn tay kế thừa sự tĩnh lặng của bàn tay trước,
-                    rồi thêm vào lớp của riêng mình.
+                    Nhựa sơn không chỉ là vật liệu — đó là ngôn ngữ. Mỗi
+                    lớp sơn là một câu, mỗi tác phẩm hoàn chỉnh là một bài
+                    thơ về căn tính dân tộc.
                   </p>
                   <button className="mt-10 font-sans text-[9px] tracking-luxury uppercase text-champagne/60 transition-colors hover:text-champagne">
                     Đọc bài →
@@ -133,15 +134,15 @@ function JournalPage() {
               </div>
               <div className="col-span-12 md:col-span-5">
                 <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                  Chất liệu · 03
+                  Bí mật cánh gián · 03
                 </p>
                 <h2 className="font-display mt-6 text-4xl uppercase leading-[1.1] text-champagne md:text-6xl">
-                  Vỏ Trứng <br /> <span className="italic text-champagne/60">Nghiền Vụn</span>
+                  Màu Cánh Gián <br /> <span className="italic text-champagne/60">Biểu Tượng</span>
                 </h2>
                 <p className="mt-8 max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/55">
-                  Chất liệu mong manh nhất trên đời, được đập vỡ có chủ ý và
-                  khảm vào nhựa sơn. Vết nứt không bị che giấu — nó chính là
-                  bố cục.
+                  Khám phá nguồn gốc và quy trình tạo ra màu cánh gián —
+                  biểu tượng của sơn mài Việt Nam. Hướng dẫn chi tiết để
+                  phân biệt sơn ta thật, từ độ bóng đến cảm giác khi chạm.
                 </p>
               </div>
             </article>
@@ -150,15 +151,15 @@ function JournalPage() {
             <article className="mx-auto grid max-w-5xl grid-cols-12 items-end gap-8">
               <div className="col-span-12 md:col-span-5">
                 <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-                  Phòng ủ · 04
+                  Giao thoa di sản · 04
                 </p>
                 <h2 className="font-display mt-6 text-3xl uppercase leading-[1.1] text-champagne md:text-5xl">
-                  Căn Phòng <br /><span className="italic text-champagne/60">Tĩnh Lặng</span>
+                  Kỷ Lục <br /><span className="italic text-champagne/60">100 Năm</span>
                 </h2>
                 <p className="mt-8 text-xs leading-loose tracking-[0.12em] text-champagne/55">
-                  Tại Hà Nội, một căn phòng không cửa sổ giữ ba trăm tấm panel
-                  trong bóng tối vĩnh viễn. Thời gian, chứ không phải nghệ
-                  nhân, hoàn tất tác phẩm.
+                  Hành trình của sơn mài Việt Nam qua 100 năm — từ Cao đẳng
+                  Mỹ thuật Đông Dương đến ngày hôm nay. Nơi 100 năm tinh
+                  hoa gặp gỡ tư duy thế kỷ XXI.
                 </p>
               </div>
               <div className="col-span-12 md:col-span-6 md:col-start-7">
