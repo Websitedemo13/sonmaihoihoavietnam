@@ -2,13 +2,10 @@
 @source "../src";
 @import "tw-animate-css";
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500&display=swap");
 
 /*
- * DFVN Float — Vietnamese display typeface (proprietary).
- * If a self-hosted file exists at /fonts/DFVN-Float.woff2 it will be used,
- * otherwise we gracefully fall back to Cormorant Garamond (closest free
- * curvilinear, high-contrast Vietnamese-supporting serif).
+ * DFVN Float — kept as a fallback display option if available.
  */
 @font-face {
   font-family: "DFVN Float";
@@ -23,9 +20,10 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Vũ Gia — The 100-Year Era of Lacquer
- * Design system: Pitch black + Champagne gold + Crimson seal
- * Inspired by Loewe Foundation minimalism × gala grandeur.
+ * Sơn Mài Di Sản · 100-Year Heritage Edition
+ * Pure black gala + Champagne gold (#D4AF37)
+ * Cinzel Decorative headings · Montserrat Light body
+ * Condensed spacing · Minimalist Gala
  */
 
 @theme inline {
@@ -54,7 +52,6 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  /* Brand semantic tokens */
   --color-pitch: var(--pitch);
   --color-champagne: var(--champagne);
   --color-champagne-soft: var(--champagne-soft);
@@ -62,58 +59,58 @@
   --color-crimson-deep: var(--crimson-deep);
   --color-ash: var(--ash);
 
-  --font-display: "DFVN Float", "Cormorant Garamond", "Cinzel Decorative", serif;
-  --font-serif: "DFVN Float", "Cormorant Garamond", "Cinzel", serif;
-  --font-sans: "DFVN Float", "Cormorant Garamond", "Inter", sans-serif;
+  --font-display: "Cinzel Decorative", "Cinzel", "DFVN Float", serif;
+  --font-serif: "Cinzel", "Cinzel Decorative", "DFVN Float", serif;
+  --font-sans: "Montserrat", "Inter", system-ui, sans-serif;
 
-  --shadow-seal: 0 0 40px oklch(0.45 0.16 45 / 0.5);
-  --shadow-gold-glow: 0 0 80px oklch(0.7 0.14 55 / 0.4);
+  --shadow-seal: 0 0 40px oklch(0.78 0.16 85 / 0.45);
+  --shadow-gold-glow: 0 0 80px oklch(0.78 0.16 85 / 0.35);
   --gradient-gold: linear-gradient(
     110deg,
-    oklch(0.45 0.12 50),
-    oklch(0.78 0.15 60),
-    oklch(0.92 0.08 70),
-    oklch(0.55 0.13 50)
+    #8a6a1a,
+    #d4af37,
+    #f3dc8a,
+    #8a6a1a
   );
 
-  --animate-shimmer: shimmer 3s linear infinite;
-  --animate-fade-up: fade-up 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
-  --animate-blur-in: blur-in 1.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-shimmer: shimmer 4s linear infinite;
+  --animate-fade-up: fade-up 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-blur-in: blur-in 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
   --animate-draw-line: draw-line 1.4s cubic-bezier(0.65, 0, 0.35, 1) both;
   --animate-particle: particle 1.8s ease-out forwards;
+  --animate-gold-leaf: gold-leaf 1.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 :root {
   --radius: 0;
-  /* Warm cocoa-charcoal — sáng rõ, vẫn giữ chiều sâu lacquer */
-  --pitch: oklch(0.28 0.022 50);
-  /* Copper-gold ánh kim sáng */
-  --champagne: oklch(0.86 0.17 70);
-  --champagne-soft: oklch(0.94 0.11 75);
-  /* Burnt copper seal */
-  --crimson: oklch(0.6 0.2 42);
-  --crimson-deep: oklch(0.48 0.18 40);
-  --ash: oklch(0.65 0.025 60);
+  /* Pure absolute black */
+  --pitch: oklch(0 0 0);
+  /* Champagne gold #D4AF37 */
+  --champagne: oklch(0.78 0.14 86);
+  --champagne-soft: oklch(0.88 0.1 88);
+  --crimson: oklch(0.5 0.18 38);
+  --crimson-deep: oklch(0.4 0.16 36);
+  --ash: oklch(0.7 0.01 80);
 
-  --background: oklch(0.26 0.02 50);
-  --foreground: oklch(0.97 0.035 78);
-  --card: oklch(0.32 0.025 50);
-  --card-foreground: oklch(0.97 0.035 78);
-  --popover: oklch(0.32 0.025 50);
-  --popover-foreground: oklch(0.97 0.035 78);
-  --primary: oklch(0.86 0.17 70);
-  --primary-foreground: oklch(0.2 0.015 50);
-  --secondary: oklch(0.34 0.028 50);
-  --secondary-foreground: oklch(0.97 0.035 78);
-  --muted: oklch(0.34 0.028 50);
-  --muted-foreground: oklch(0.78 0.06 70);
-  --accent: oklch(0.6 0.2 42);
-  --accent-foreground: oklch(0.98 0.04 78);
-  --destructive: oklch(0.6 0.22 38);
-  --destructive-foreground: oklch(0.98 0.04 78);
-  --border: oklch(0.86 0.17 70 / 0.32);
-  --input: oklch(0.86 0.17 70 / 0.45);
-  --ring: oklch(0.86 0.17 70);
+  --background: oklch(0 0 0);
+  --foreground: oklch(0.96 0.02 85);
+  --card: oklch(0.04 0 0);
+  --card-foreground: oklch(0.96 0.02 85);
+  --popover: oklch(0.04 0 0);
+  --popover-foreground: oklch(0.96 0.02 85);
+  --primary: oklch(0.78 0.14 86);
+  --primary-foreground: oklch(0 0 0);
+  --secondary: oklch(0.08 0 0);
+  --secondary-foreground: oklch(0.96 0.02 85);
+  --muted: oklch(0.08 0 0);
+  --muted-foreground: oklch(0.7 0.04 85);
+  --accent: oklch(0.5 0.18 38);
+  --accent-foreground: oklch(0.96 0.02 85);
+  --destructive: oklch(0.55 0.22 38);
+  --destructive-foreground: oklch(0.96 0.02 85);
+  --border: oklch(0.78 0.14 86 / 0.18);
+  --input: oklch(0.78 0.14 86 / 0.32);
+  --ring: oklch(0.78 0.14 86);
 }
 
 @layer base {
@@ -126,17 +123,18 @@
   }
 
   body {
-    background-color: var(--color-background);
+    background-color: #000;
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-weight: 400;
-    letter-spacing: 0.005em;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     position: relative;
   }
 
-  /* Lacquer wave — fixed copper-gold flowing wave across all pages */
+  /* Subtle gold ambient — far less than before to keep pure black gala */
   body::before {
     content: "";
     position: fixed;
@@ -144,43 +142,20 @@
     z-index: 0;
     pointer-events: none;
     background:
-      /* upper-left dark void */
       radial-gradient(
-        ellipse 90% 70% at 25% 20%,
-        oklch(0.12 0.015 45 / 0.85),
-        transparent 60%
+        ellipse 60% 40% at 80% 90%,
+        oklch(0.78 0.14 86 / 0.06),
+        transparent 70%
       ),
-      /* main copper wave — diagonal sweep */
       radial-gradient(
-        ellipse 120% 35% at 70% 75%,
-        oklch(0.7 0.2 50 / 0.55),
-        oklch(0.5 0.18 45 / 0.3) 35%,
-        transparent 65%
-      ),
-      /* secondary gold highlight along the wave */
-      radial-gradient(
-        ellipse 80% 20% at 60% 70%,
-        oklch(0.88 0.18 75 / 0.45),
-        transparent 55%
-      ),
-      /* gold dust cluster bottom-right */
-      radial-gradient(
-        circle 30% at 90% 95%,
-        oklch(0.85 0.2 78 / 0.4),
-        transparent 60%
-      ),
-      /* dark base wash */
-      linear-gradient(
-        135deg,
-        oklch(0.18 0.018 48) 0%,
-        oklch(0.32 0.025 52) 60%,
-        oklch(0.22 0.02 48) 100%
+        ellipse 50% 35% at 15% 10%,
+        oklch(0.78 0.14 86 / 0.04),
+        transparent 70%
       );
     background-attachment: fixed;
-    background-size: cover;
   }
 
-  /* Gold particle dust — fine speckled overlay */
+  /* Very faint gold dust */
   body::after {
     content: "";
     position: fixed;
@@ -188,42 +163,38 @@
     z-index: 0;
     pointer-events: none;
     background-image:
-      radial-gradient(circle at 12% 18%, oklch(0.92 0.18 78 / 0.7) 0.5px, transparent 1.5px),
-      radial-gradient(circle at 88% 12%, oklch(0.88 0.18 75 / 0.6) 0.5px, transparent 1.5px),
-      radial-gradient(circle at 35% 65%, oklch(0.82 0.18 70 / 0.5) 0.4px, transparent 1.2px),
-      radial-gradient(circle at 72% 45%, oklch(0.9 0.18 75 / 0.5) 0.5px, transparent 1.4px),
-      radial-gradient(circle at 18% 88%, oklch(0.85 0.18 72 / 0.6) 0.6px, transparent 1.6px),
-      radial-gradient(circle at 95% 78%, oklch(0.92 0.2 78 / 0.7) 0.5px, transparent 1.5px),
-      radial-gradient(circle at 50% 30%, oklch(0.78 0.16 68 / 0.4) 0.4px, transparent 1.2px),
-      radial-gradient(circle at 8% 55%, oklch(0.86 0.18 72 / 0.5) 0.4px, transparent 1.3px);
+      radial-gradient(circle at 12% 18%, oklch(0.92 0.16 86 / 0.5) 0.4px, transparent 1.2px),
+      radial-gradient(circle at 88% 12%, oklch(0.88 0.16 86 / 0.4) 0.4px, transparent 1.2px),
+      radial-gradient(circle at 35% 65%, oklch(0.82 0.14 86 / 0.35) 0.3px, transparent 1px),
+      radial-gradient(circle at 72% 45%, oklch(0.9 0.16 86 / 0.4) 0.4px, transparent 1.2px),
+      radial-gradient(circle at 18% 88%, oklch(0.85 0.14 86 / 0.4) 0.4px, transparent 1.3px),
+      radial-gradient(circle at 95% 78%, oklch(0.92 0.16 86 / 0.5) 0.4px, transparent 1.2px);
     background-size:
-      280px 280px, 320px 320px, 240px 240px, 360px 360px,
-      300px 300px, 260px 260px, 220px 220px, 340px 340px;
+      320px 320px, 360px 360px, 280px 280px, 400px 400px,
+      340px 340px, 300px 300px;
     background-attachment: fixed;
-    opacity: 0.65;
+    opacity: 0.35;
     mix-blend-mode: screen;
   }
 
-  /* Ensure all content sits above the fixed background layers */
   body > * {
     position: relative;
     z-index: 1;
   }
 
   ::selection {
-    background-color: var(--color-crimson);
-    color: var(--color-champagne);
+    background-color: var(--color-champagne);
+    color: #000;
   }
 
-  /* Custom thin gold scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: var(--color-pitch);
+    background: #000;
   }
   ::-webkit-scrollbar-thumb {
-    background: oklch(0.78 0.13 85 / 0.3);
+    background: oklch(0.78 0.14 86 / 0.35);
   }
 }
 
@@ -231,12 +202,14 @@
   .font-display {
     font-family: var(--font-display);
     font-weight: 400;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
   }
   .font-serif-cap {
     font-family: var(--font-serif);
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
   }
   .tracking-luxury {
     letter-spacing: 0.25em;
@@ -244,21 +217,44 @@
   .tracking-eyebrow {
     letter-spacing: 0.4em;
   }
+  .tracking-cinzel {
+    letter-spacing: 0.32em; /* ~5px @ 14-16px */
+  }
 
   .text-shimmer {
     background: linear-gradient(
       110deg,
-      oklch(0.5 0.13 50) 30%,
-      oklch(0.78 0.15 60) 45%,
-      oklch(0.95 0.08 75) 50%,
-      oklch(0.78 0.15 60) 55%,
-      oklch(0.5 0.13 50) 70%
+      #8a6a1a 30%,
+      #d4af37 45%,
+      #f3dc8a 50%,
+      #d4af37 55%,
+      #8a6a1a 70%
     );
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: shimmer 4s linear infinite;
+    animation: shimmer 5s linear infinite;
+  }
+
+  /* Gold Leaf Reveal — text "dát vàng" */
+  .gold-leaf {
+    background: linear-gradient(
+      120deg,
+      #6a4f0e 0%,
+      #b9911f 20%,
+      #f3dc8a 45%,
+      #ffffff 50%,
+      #f3dc8a 55%,
+      #b9911f 80%,
+      #6a4f0e 100%
+    );
+    background-size: 250% 100%;
+    background-position: 200% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gold-leaf 2.4s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 
   .gloss-overlay::after {
@@ -279,7 +275,7 @@
     background: linear-gradient(
       to right,
       transparent,
-      oklch(0.78 0.13 85 / 0.5),
+      oklch(0.78 0.14 86 / 0.6),
       transparent
     );
   }
@@ -308,87 +304,92 @@
     border-top: 0;
   }
 
-  .lacquer-sheen {
+  /* Glossy black — for CTA pedestal */
+  .glossy-black {
     background:
       radial-gradient(
-        ellipse at 80% 60%,
-        oklch(0.65 0.16 60 / 0.28),
-        transparent 55%
-      ),
-      radial-gradient(
-        ellipse at 15% 25%,
-        oklch(0.5 0.14 45 / 0.22),
-        transparent 60%
-      ),
-      radial-gradient(
-        ellipse at 50% 100%,
-        oklch(0.7 0.15 65 / 0.18),
+        ellipse 60% 40% at 50% 0%,
+        oklch(0.18 0.01 85 / 0.6),
         transparent 70%
       ),
-      var(--color-pitch);
+      radial-gradient(
+        ellipse 80% 60% at 50% 100%,
+        oklch(0.12 0.01 85 / 0.4),
+        transparent 70%
+      ),
+      #000;
+  }
+
+  /* Shimmering gold button — continuous, subtle */
+  .btn-gold {
+    position: relative;
+    background: linear-gradient(
+      110deg,
+      #8a6a1a 0%,
+      #d4af37 35%,
+      #f3dc8a 50%,
+      #d4af37 65%,
+      #8a6a1a 100%
+    );
+    background-size: 250% 100%;
+    color: #000;
+    animation: shimmer 6s linear infinite;
+    box-shadow:
+      0 0 0 1px rgba(212, 175, 55, 0.6) inset,
+      0 10px 40px -10px rgba(212, 175, 55, 0.45);
+    transition: box-shadow 0.6s ease, transform 0.6s ease;
+  }
+  .btn-gold:hover {
+    box-shadow:
+      0 0 0 1px rgba(212, 175, 55, 0.9) inset,
+      0 14px 60px -10px rgba(212, 175, 55, 0.7);
+    transform: translateY(-1px);
   }
 }
 
 @keyframes shimmer {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
 @keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes blur-in {
-  from {
+  from { opacity: 0; filter: blur(16px); transform: scale(1.03); }
+  to { opacity: 1; filter: blur(0); transform: scale(1); }
+}
+
+@keyframes gold-leaf {
+  0% {
     opacity: 0;
-    filter: blur(20px);
-    transform: scale(1.04);
+    background-position: 200% 0;
+    filter: blur(8px);
   }
-  to {
+  60% {
     opacity: 1;
     filter: blur(0);
-    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    background-position: -50% 0;
+    filter: blur(0);
   }
 }
 
 @keyframes draw-line {
-  from {
-    transform: scaleY(0);
-    transform-origin: top;
-  }
-  to {
-    transform: scaleY(1);
-    transform-origin: top;
-  }
+  from { transform: scaleY(0); transform-origin: top; }
+  to { transform: scaleY(1); transform-origin: top; }
 }
 
 @keyframes pulse-aura {
-  0%, 100% {
-    box-shadow: 0 0 60px oklch(0.78 0.13 85 / 0.3);
-  }
-  50% {
-    box-shadow: 0 0 100px oklch(0.78 0.13 85 / 0.55);
-  }
+  0%, 100% { box-shadow: 0 0 60px oklch(0.78 0.14 86 / 0.3); }
+  50% { box-shadow: 0 0 100px oklch(0.78 0.14 86 / 0.55); }
 }
 
 @keyframes particle {
-  0% {
-    opacity: 1;
-    transform: translate(0, 0) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(var(--tx), var(--ty)) scale(0);
-  }
+  0% { opacity: 1; transform: translate(0, 0) scale(1); }
+  100% { opacity: 0; transform: translate(var(--tx), var(--ty)) scale(0); }
 }
