@@ -1,8 +1,8 @@
 import { Link } from "@tanstack/react-router";
 
 const links = [
-  { to: "/", label: "Giới thiệu" },
-  { to: "/home", label: "Trang chủ" },
+  { to: "/", label: "Trang chủ" },
+  { to: "/about", label: "Giới thiệu" },
   { to: "/journey", label: "Hành trình" },
   { to: "/gallery", label: "Thư viện" },
   { to: "/journal", label: "Tin tức" },
@@ -36,6 +36,7 @@ export function SiteHeader() {
               to={l.to}
               className="group relative font-sans text-[9px] tracking-eyebrow uppercase text-champagne/55 transition-colors duration-500 hover:text-champagne"
               activeProps={{ className: "text-champagne" }}
+              activeOptions={{ exact: l.to === "/" }}
             >
               {l.label}
               <span className="absolute -bottom-2 left-0 h-px w-0 bg-champagne transition-all duration-500 group-hover:w-full" />
