@@ -2,82 +2,122 @@ import heroImg from "@/assets/lacquer-hero.jpg";
 
 export function Hero() {
   return (
-    <section className="relative min-h-dvh w-full overflow-hidden bg-black">
-      {/* Subtle radial vignette */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_50%,rgba(212,175,55,0.05),transparent_70%)]" />
+    <section className="relative min-h-dvh w-full overflow-hidden">
+      {/* Hero background — wet lacquer */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImg}
+          alt="Nhựa sơn ta đen tuyền phản chiếu một tia ánh vàng"
+          className="h-full w-full object-cover opacity-50"
+          width={1920}
+          height={1080}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-pitch/80 via-pitch/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-pitch/60 via-transparent to-pitch/20" />
+      </div>
 
-      <div className="relative z-10 flex min-h-dvh flex-col items-center justify-center px-6 pt-28 pb-16 md:pt-32">
-        {/* Eyebrow */}
-        <div
-          className="mb-6 flex items-center gap-3"
-          style={{ animation: "fade-up 1s 0.1s both" }}
-        >
-          <span className="block h-px w-8 bg-champagne/60" />
-          <span className="font-sans text-[10px] tracking-cinzel uppercase text-champagne/70">
-            MCMXXIV — MMXXVI · Heritage Edition
-          </span>
-          <span className="block h-px w-8 bg-champagne/60" />
-        </div>
+      {/* Ambient gold glow */}
+      <div className="pointer-events-none absolute -right-20 top-[-10%] h-[800px] w-[800px] rounded-full bg-champagne/[0.04] blur-[150px]" />
+      <div className="pointer-events-none absolute -left-20 bottom-[-20%] h-[600px] w-[600px] rounded-full bg-crimson/[0.06] blur-[120px]" />
 
-        {/* Circle mask — 65% viewport, panorama lacquer */}
-        <div
-          className="relative mx-auto aspect-square w-[88vw] max-w-[640px] md:w-[65vmin] md:max-w-[680px]"
-          style={{ animation: "blur-in 1.6s 0.2s both" }}
-        >
-          {/* Outer gold ring */}
-          <div className="absolute inset-0 rounded-full ring-1 ring-champagne/40" />
-          <div className="absolute -inset-2 rounded-full ring-1 ring-champagne/15" />
+      {/* Vertical structural rails */}
+      <div className="pointer-events-none absolute inset-y-0 left-12 hidden w-px bg-gradient-to-b from-transparent via-champagne/15 to-transparent lg:block" />
+      <div className="pointer-events-none absolute inset-y-0 right-12 hidden w-px bg-gradient-to-b from-transparent via-champagne/15 to-transparent lg:block" />
 
-          {/* Soft gold aura */}
-          <div className="pointer-events-none absolute -inset-10 rounded-full bg-champagne/10 blur-3xl" />
-
-          <div className="absolute inset-2 overflow-hidden rounded-full bg-black">
-            <img
-              src={heroImg}
-              alt="Panorama sơn mài Việt Nam — di sản trăm năm"
-              className="h-full w-full object-cover grayscale contrast-110"
-              width={1600}
-              height={1600}
-            />
-            {/* Black gradient bottom for title legibility */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/40" />
-            {/* Specular gloss */}
-            <div className="absolute -top-10 left-1/3 h-[140%] w-px rotate-12 bg-gradient-to-b from-transparent via-champagne/50 to-transparent blur-[1px] opacity-70" />
-          </div>
-
-          {/* Title overlaid on the circle */}
-          <div className="absolute inset-0 flex items-center justify-center px-4">
-            <h1
-              className="font-display text-center text-[clamp(1.4rem,4.6vw,3.4rem)] leading-[1.05] tracking-cinzel"
-              style={{ animation: "fade-up 1.2s 0.6s both" }}
+      {/* Content */}
+      <div className="relative z-10 flex min-h-dvh items-center pt-32">
+        <div className="mx-auto grid w-full max-w-[1600px] grid-cols-12 gap-8 px-6 lg:px-24">
+          <div className="col-span-12 flex flex-col justify-center lg:col-span-8">
+            <div
+              className="mb-8 ml-2 flex items-center gap-4 lg:ml-12"
+              style={{ animation: "fade-up 1.2s 0.2s both" }}
             >
-              <span className="block gold-leaf">Hành Trình</span>
-              <span className="my-2 block text-champagne/70 text-[0.55em] tracking-[0.5em]">
-                — 100 Năm —
+              <span className="block h-px w-8 bg-crimson" />
+              <span className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
+                Sơn Mài Việt Nam · Tĩnh Lặng & Vĩnh Cửu
               </span>
-              <span className="block gold-leaf" style={{ animationDelay: "0.6s" }}>
-                Sơn Mài Việt Nam
+            </div>
+
+            <h1
+              className="font-display flex flex-col text-5xl uppercase leading-[0.85] text-champagne md:text-7xl lg:text-[110px]"
+              style={{ animation: "blur-in 1.6s 0.3s both" }}
+            >
+              <span className="block tracking-tight text-champagne/95">
+                Nghệ Thuật
+              </span>
+              <span className="ml-12 block tracking-tight text-champagne/55 lg:ml-32">
+                Không Chỉ Được Nhìn
+              </span>
+              <span className="text-shimmer block tracking-tight">
+                Cảm Từ Tĩnh Lặng
               </span>
             </h1>
+
+            <p
+              className="mt-16 ml-12 max-w-[44ch] text-xs leading-[2.2] tracking-[0.15em] text-champagne/55 lg:ml-32 lg:text-sm"
+              style={{ animation: "fade-up 1.2s 1s both" }}
+            >
+              Nơi sơn mài Việt Nam chạm đến linh hồn thời đại. Mỗi tác phẩm
+              là một khoảnh khắc vĩnh cửu — được nuôi dưỡng từ nhựa sơn,
+              ánh vàng và sự tĩnh lặng sâu thẳm nhất.
+            </p>
+
+            <div
+              className="mt-16 ml-12 flex items-center gap-8 lg:ml-32"
+              style={{ animation: "fade-up 1.2s 1.3s both" }}
+            >
+              <button className="group flex items-center gap-6 font-sans text-[9px] tracking-luxury uppercase text-champagne/75 transition-colors duration-700 hover:text-champagne">
+                <span className="block h-px w-16 bg-champagne/30 transition-all duration-700 group-hover:w-32 group-hover:bg-champagne" />
+                Khám phá tác phẩm
+              </button>
+            </div>
+          </div>
+
+          {/* The Lacquer Panel */}
+          <div className="relative col-span-4 mt-24 hidden lg:block">
+            <div
+              className="vault-frame absolute -inset-6 border border-champagne/10"
+              style={{ animation: "fade-up 1.4s 0.6s both" }}
+            >
+              <div className="absolute -right-px -top-px size-[3px] bg-crimson" />
+              <div className="absolute -bottom-px -left-px size-[3px] bg-crimson" />
+            </div>
+
+            <div
+              className="group relative aspect-[3/4] w-full overflow-hidden bg-pitch"
+              style={{ animation: "blur-in 1.8s 0.5s both" }}
+            >
+              <img
+                src={heroImg}
+                alt=""
+                className="absolute inset-0 h-full w-full scale-105 object-cover opacity-40 mix-blend-luminosity transition-transform duration-[20s] ease-out group-hover:scale-110"
+                width={800}
+                height={1066}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-pitch via-pitch/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-b from-pitch via-transparent to-pitch/60" />
+              <div className="absolute right-[20%] top-0 h-full w-px -skew-x-[15deg] bg-gradient-to-b from-transparent via-champagne/60 to-transparent opacity-40 blur-[1px] transition-all duration-1000 group-hover:translate-x-12 group-hover:opacity-80" />
+              <div className="absolute right-[22%] top-[10%] h-[40%] w-[2px] -skew-x-[15deg] bg-gradient-to-b from-transparent via-champagne/40 to-transparent opacity-20 blur-[3px]" />
+            </div>
+
+            <p className="mt-6 font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
+              The Eternal · N° 01 · 2026
+            </p>
           </div>
         </div>
 
-        {/* Tight CTA below circle */}
-        <p
-          className="mt-8 max-w-[52ch] text-center font-sans text-[12px] leading-[1.9] tracking-[0.18em] text-champagne/60 md:text-[13px]"
-          style={{ animation: "fade-up 1s 1s both" }}
-        >
-          Một thế kỷ của nhựa sơn, ánh vàng và tĩnh lặng — được nuôi
-          dưỡng trong bóng tối và bừng sáng cùng thời đại.
-        </p>
-
-        <div
-          className="mt-8 flex items-center gap-4 font-sans text-[10px] tracking-cinzel uppercase text-champagne/55"
-          style={{ animation: "fade-up 1s 1.2s both" }}
-        >
-          <span className="block h-px w-8 bg-champagne/40" />
-          Cuộn xuống
-          <span className="block h-px w-8 bg-champagne/40" />
+        {/* Scroll indicator */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-between px-8 pb-10 md:px-12">
+          <div className="flex items-end gap-3">
+            <div className="h-16 w-px bg-gradient-to-t from-champagne via-champagne/50 to-transparent" />
+            <span className="font-sans text-[8px] tracking-eyebrow uppercase text-champagne/50 [writing-mode:vertical-rl]">
+              Cuộn xuống
+            </span>
+          </div>
+          <div className="text-right font-sans text-[8px] tracking-eyebrow uppercase text-champagne/30">
+            <p>Xưởng · Hà Nội</p>
+            <p className="mt-1">Triển lãm · Toàn cầu</p>
+          </div>
         </div>
       </div>
     </section>
