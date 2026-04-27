@@ -1,8 +1,8 @@
 import { Link } from "@tanstack/react-router";
 
 const links = [
-  { to: "/", label: "Giới thiệu" },
-  { to: "/home", label: "Trang chủ" },
+  { to: "/", label: "Trang chủ" },
+  { to: "/about", label: "Giới thiệu" },
   { to: "/journey", label: "Hành trình" },
   { to: "/gallery", label: "Thư viện" },
   { to: "/journal", label: "Tin tức" },

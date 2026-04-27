@@ -6,16 +6,16 @@ import { HeritageTimeline } from "@/components/home/HeritageTimeline";
 import { HeritagePedestals } from "@/components/home/HeritagePedestals";
 import { CtaFooter } from "@/components/home/CtaFooter";
 
-export const Route = createFileRoute("/home")({
+export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "Trang Chủ · Hành Trình 100 Năm Sơn Mài" },
+      { title: "Giới Thiệu · Hành Trình 100 Năm Sơn Mài Việt Nam" },
       {
         name: "description",
         content:
           "Một thế kỷ sơn mài Việt Nam — Minimalist Gala, Champagne Gold. Dòng chảy kỷ lục, ba bục vinh danh và lời mời ghi danh vào lịch sử.",
       },
-      { property: "og:title", content: "Trang Chủ · Hành Trình 100 Năm Sơn Mài" },
+      { property: "og:title", content: "Giới Thiệu · Hành Trình 100 Năm Sơn Mài" },
       {
         property: "og:description",
         content:
@@ -23,10 +23,10 @@ export const Route = createFileRoute("/home")({
       },
     ],
   }),
-  component: HomePage,
+  component: AboutPage,
 });
 
-function HomePage() {
+function AboutPage() {
   return (
     <div className="min-h-dvh bg-black text-foreground">
       <SiteHeader />
