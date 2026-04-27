@@ -1,34 +1,28 @@
 export function EssenceQuote() {
   return (
-    <section className="relative bg-pitch/30 backdrop-blur-[1px] px-6 py-40 md:py-56">
-      <div className="mx-auto max-w-5xl text-center">
-        <div className="mx-auto mb-16 flex items-center justify-center gap-4">
-          <span className="block h-px w-12 bg-champagne/40" />
-          <span className="font-sans text-[10px] tracking-eyebrow uppercase text-champagne/60">
-            Sứ mệnh nghệ thuật
-          </span>
-          <span className="block h-px w-12 bg-champagne/40" />
+    <section className="relative bg-black px-6 py-12 md:py-16">
+      <div className="mx-auto max-w-3xl">
+        {/* Slim vertical rectangular frame */}
+        <div className="relative mx-auto border border-champagne/30 px-8 py-12 md:px-14 md:py-16">
+          {/* Corner ticks */}
+          <span className="absolute -top-px left-1/2 h-2 w-px -translate-x-1/2 bg-champagne" />
+          <span className="absolute -bottom-px left-1/2 h-2 w-px -translate-x-1/2 bg-champagne" />
+
+          <p className="text-center font-sans text-[10px] tracking-cinzel uppercase text-champagne/60">
+            Sứ Mệnh Nghệ Thuật
+          </p>
+
+          <blockquote className="mt-6 text-center font-display text-xl leading-[1.4] tracking-[0.16em] text-champagne md:text-2xl lg:text-[1.75rem]">
+            <span className="text-champagne/40">“</span>
+            Chúng tôi không sáng tác — chúng tôi <span className="text-shimmer">kiến tạo</span> ngôn ngữ thị giác riêng biệt
+            <span className="text-champagne/40">.”</span>
+          </blockquote>
+
+          <div className="mx-auto mt-6 h-px w-12 bg-champagne/50" />
+          <p className="mt-4 text-center font-sans text-[10px] tracking-cinzel uppercase text-champagne/45">
+            Sơn Mài Di Sản · Atelier
+          </p>
         </div>
-
-        <blockquote className="font-display text-3xl leading-[1.3] text-champagne/85 md:text-5xl lg:text-[3.75rem] lg:leading-[1.25]">
-          <span className="text-champagne/40">"</span>
-          Chúng tôi không đơn thuần sáng tác — chúng tôi{" "}
-          <em className="not-italic text-champagne">kiến tạo</em>
-          <br className="hidden md:block" /> ngôn ngữ thị giác{" "}
-          <span className="text-shimmer">riêng biệt</span>.
-          <span className="text-champagne/40">"</span>
-        </blockquote>
-
-        <p className="mx-auto mt-12 max-w-[58ch] text-xs leading-loose tracking-[0.12em] text-champagne/55 md:text-sm">
-          Nơi kỹ thuật sơn mài truyền thống hòa quyện với tư duy đương đại.
-          Mỗi tác phẩm là một tuyên ngôn về bản sắc, về chiều sâu và về
-          những giá trị bền vững vượt thời gian.
-        </p>
-
-        <div className="mx-auto mt-16 h-px w-24 bg-champagne/40" />
-        <p className="mt-8 font-sans text-[9px] tracking-eyebrow uppercase text-champagne/45">
-          Tạo ra những giá trị · Khác biệt
-        </p>
       </div>
     </section>
   );

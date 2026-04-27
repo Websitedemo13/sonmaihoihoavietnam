@@ -2,42 +2,36 @@ import { Link } from "@tanstack/react-router";
 
 export function CtaFooter() {
   return (
-    <section className="relative overflow-hidden bg-pitch/30 backdrop-blur-[1px] px-6 py-44 md:py-56">
-      {/* Ambient glows */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-champagne/[0.04] blur-[120px]" />
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/40 to-transparent" />
+    <section className="relative overflow-hidden glossy-black px-6 py-14 md:py-20">
+      {/* Top gold thread */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/60 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-champagne/30 to-transparent" />
 
-      <div className="relative mx-auto max-w-3xl text-center">
-        <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
-          Tác phẩm tiêu biểu · The Eternal
+      <div className="relative mx-auto max-w-2xl text-center">
+        <p className="font-sans text-[10px] tracking-cinzel uppercase text-champagne/65">
+          Ghi Danh Vào Lịch Sử
         </p>
 
-        <h2 className="font-display mt-10 text-4xl uppercase leading-[1.05] text-champagne md:text-6xl lg:text-[5rem]">
-          Khoảnh Khắc <br />
-          <span className="text-shimmer italic">Vĩnh Cửu</span>
+        <h2 className="font-display mt-5 text-2xl leading-[1.15] text-champagne tracking-cinzel md:text-3xl lg:text-4xl">
+          <span className="gold-leaf">Khoảnh Khắc Vĩnh Cửu</span>
         </h2>
 
-        <p className="mx-auto mt-12 max-w-[44ch] text-xs leading-loose tracking-[0.15em] text-champagne/55 md:text-sm">
-          Tác phẩm khai sinh — nơi hành trình bắt đầu. Nhựa sơn và lá vàng
-          hòa quyện thành một bản tuyên ngôn về sự vĩnh cửu, về ánh sáng
-          tìm đến từ bóng tối sâu thẳm nhất.
+        <p className="mx-auto mt-5 max-w-[44ch] font-sans text-[12px] leading-[1.9] tracking-[0.14em] text-champagne/60 md:text-[13px]">
+          Trở thành một phần của hành trình trăm năm — nơi nhựa sơn,
+          lá vàng và tĩnh lặng cùng viết tiếp di sản.
         </p>
 
-        <div className="mt-20 flex flex-col items-center gap-8">
+        <div className="mt-8 flex flex-col items-center gap-4">
           <Link
             to="/contact"
-            className="group relative inline-flex items-center justify-center"
+            className="group btn-gold relative inline-flex items-center gap-4 px-10 py-4 font-sans text-[10px] tracking-cinzel uppercase"
           >
-            {/* The shimmering gold seal button */}
-            <span className="relative inline-flex items-center gap-6 border border-champagne bg-pitch px-12 py-5 font-sans text-[10px] tracking-luxury uppercase text-champagne transition-all duration-700 hover:bg-champagne hover:text-pitch">
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-champagne/30 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
-              <span className="relative">Khám phá tác phẩm</span>
-              <span className="relative font-display">→</span>
-            </span>
+            <span className="relative">Theo dõi hành trình</span>
+            <span className="relative font-display">→</span>
           </Link>
 
-          <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/35">
-            Mọi tác phẩm đều được giám định · Gắn mã định danh di sản
+          <p className="font-sans text-[9px] tracking-cinzel uppercase text-champagne/35">
+            Mỗi tác phẩm · Giám định · Mã định danh di sản
           </p>
         </div>
       </div>
