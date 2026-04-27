@@ -2,8 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Hero } from "@/components/home/Hero";
-import { HeritageTimeline } from "@/components/home/HeritageTimeline";
-import { HeritagePedestals } from "@/components/home/HeritagePedestals";
 import { EssenceQuote } from "@/components/home/EssenceQuote";
 import { RecordValues } from "@/components/home/RecordValues";
 import { PresenceGrid } from "@/components/home/PresenceGrid";
@@ -12,32 +10,30 @@ import { CtaFooter } from "@/components/home/CtaFooter";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sơn Mài Di Sản — Hành Trình 100 Năm" },
+      { title: "Sơn Mài Di Sản — Nghệ thuật cảm từ tĩnh lặng" },
       {
         name: "description",
         content:
-          "Một thế kỷ sơn mài Việt Nam — nhựa sơn, ánh vàng và tĩnh lặng. Bộ sưu tập di sản được giám định và gắn mã định danh.",
+          "Nơi sơn mài Việt Nam chạm đến linh hồn thời đại. Mỗi tác phẩm là một khoảnh khắc vĩnh cửu — nhựa sơn, ánh vàng và sự tĩnh lặng sâu thẳm.",
       },
-      { property: "og:title", content: "Sơn Mài Di Sản — Hành Trình 100 Năm" },
+      { property: "og:title", content: "Sơn Mài Di Sản — Nghệ thuật cảm từ tĩnh lặng" },
       {
         property: "og:description",
         content:
-          "Kỷ nguyên trăm năm sơn mài — Minimalist Gala · Champagne Gold · Cinzel Decorative.",
+          "Nghệ thuật không chỉ được nhìn — nó được cảm nhận từ trong tĩnh lặng.",
       },
     ],
   }),
-  component: HomePage,
+  component: IndexPage,
 });
 
-function HomePage() {
+function IndexPage() {
   return (
-    <div className="min-h-dvh bg-black text-foreground">
+    <div className="min-h-dvh text-foreground">
       <SiteHeader />
       <main>
         <Hero />
         <EssenceQuote />
-        <HeritageTimeline />
-        <HeritagePedestals />
         <RecordValues />
         <PresenceGrid />
         <CtaFooter />
