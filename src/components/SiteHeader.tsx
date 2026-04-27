@@ -10,7 +10,7 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="absolute inset-x-0 top-0 z-50 px-6 py-8 md:px-12 md:py-10">
+    <header className="absolute inset-x-0 top-0 z-50 px-6 py-5 md:px-12 md:py-6">
       <div className="mx-auto flex max-w-[1600px] items-center justify-between">
         <Link to="/" className="group flex items-center gap-4">
           <div className="relative flex size-10 items-center justify-center border border-crimson bg-crimson/10 transition-colors duration-700 group-hover:bg-crimson/25">
