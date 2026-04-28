@@ -59,9 +59,9 @@
   --color-crimson-deep: var(--crimson-deep);
   --color-ash: var(--ash);
 
-  --font-display: "Cinzel Decorative", "Cinzel", "DFVN Float", serif;
-  --font-serif: "Cinzel", "Cinzel Decorative", "DFVN Float", serif;
-  --font-sans: "Montserrat", "Inter", system-ui, sans-serif;
+  --font-display: "DFVN Float", "Cinzel Decorative", "Cinzel", serif;
+  --font-serif: "DFVN Float", "Cinzel", serif;
+  --font-sans: "DFVN Float", "Montserrat", "Inter", system-ui, sans-serif;
 
   --shadow-seal: 0 0 40px oklch(0.78 0.16 85 / 0.45);
   --shadow-gold-glow: 0 0 80px oklch(0.78 0.16 85 / 0.35);
@@ -132,6 +132,11 @@
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     position: relative;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  blockquote, button, input, select, textarea, label, a, p, span, li {
+    font-family: var(--font-sans);
   }
 
   /* Subtle gold ambient — far less than before to keep pure black gala */
