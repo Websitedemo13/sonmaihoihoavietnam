@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { Hero } from "@/components/home/Hero";
-import { EssenceQuote } from "@/components/home/EssenceQuote";
-import { RecordValues } from "@/components/home/RecordValues";
-import { PresenceGrid } from "@/components/home/PresenceGrid";
-import { CtaFooter } from "@/components/home/CtaFooter";
+import { HomeBanner } from "@/components/home/HomeBanner";
+import { HomeIntro } from "@/components/home/HomeIntro";
+import { HomePresence } from "@/components/home/HomePresence";
+import { HomeFeatured } from "@/components/home/HomeFeatured";
+import { HomeReflections } from "@/components/home/HomeReflections";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -16,7 +16,10 @@ export const Route = createFileRoute("/")({
         content:
           "Nơi sơn mài Việt Nam chạm đến linh hồn thời đại. Mỗi tác phẩm là một khoảnh khắc vĩnh cửu — nhựa sơn, ánh vàng và sự tĩnh lặng sâu thẳm.",
       },
-      { property: "og:title", content: "Sơn Mài Di Sản — Nghệ thuật cảm từ tĩnh lặng" },
+      {
+        property: "og:title",
+        content: "Sơn Mài Di Sản — Nghệ thuật cảm từ tĩnh lặng",
+      },
       {
         property: "og:description",
         content:
@@ -32,11 +35,11 @@ function IndexPage() {
     <div className="min-h-dvh text-foreground">
       <SiteHeader />
       <main>
-        <Hero />
-        <EssenceQuote />
-        <RecordValues />
-        <PresenceGrid />
-        <CtaFooter />
+        <HomeBanner />
+        <HomeIntro />
+        <HomePresence />
+        <HomeFeatured />
+        <HomeReflections />
       </main>
       <SiteFooter />
     </div>
