@@ -1,59 +1,98 @@
 import { Link } from "@tanstack/react-router";
 
+const sitemap = [
+  { to: "/", label: "Trang chủ" },
+  { to: "/about", label: "Giới thiệu" },
+  { to: "/journey", label: "Hành trình" },
+  { to: "/gallery", label: "Thư viện" },
+  { to: "/journal", label: "Tin tức" },
+  { to: "/contact", label: "Liên hệ" },
+] as const;
+
+const socials = [
+  { label: "IG", href: "https://instagram.com" },
+  { label: "FB", href: "https://facebook.com" },
+  { label: "BE", href: "https://behance.net" },
+  { label: "YT", href: "https://youtube.com" },
+];
+
 export function SiteFooter() {
   return (
-    <footer className="relative border-t border-champagne/20 bg-black px-6 py-10 md:px-12 md:py-12">
-      <div className="mx-auto grid max-w-[1280px] gap-8 md:grid-cols-12">
-        <div className="md:col-span-5">
+    <footer className="relative border-t border-champagne/20 bg-black px-6 py-12 md:px-12 md:py-14">
+      <div className="mx-auto grid max-w-[1280px] gap-10 md:grid-cols-3 md:gap-12">
+        {/* Left — logo + slogan */}
+        <div className="flex flex-col items-start">
           <div className="flex items-center gap-4">
-            <div className="flex size-12 items-center justify-center border border-crimson bg-crimson/15">
+            <div className="flex size-11 items-center justify-center border border-crimson bg-crimson/15">
               <span className="font-display text-base text-champagne">S</span>
             </div>
             <div>
-              <p className="font-serif-cap text-xs text-champagne">Sơn Mài Di Sản</p>
+              <p className="font-serif-cap text-xs text-champagne">
+                Sơn Mài Di Sản
+              </p>
               <p className="mt-1 font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-                Kỷ Nguyên Trăm Năm · MCMXXIV
+                Kỷ Nguyên Trăm Năm
               </p>
             </div>
           </div>
-          <p className="mt-10 max-w-sm text-xs leading-loose tracking-[0.1em] text-champagne/45">
-            Một trăm năm của nhựa sơn, thời gian và tĩnh lặng — được gìn giữ
-            như ngọn lửa. Một thế kỷ ủ trong bóng tối, nay bừng sáng cùng thế giới.
+          <p className="mt-6 max-w-xs font-sans text-[11px] leading-[1.9] tracking-[0.1em] text-champagne/50">
+            Nghệ thuật không chỉ được nhìn — nó được cảm nhận từ trong tĩnh lặng.
           </p>
         </div>
 
-        <div className="md:col-span-3">
+        {/* Center — sitemap */}
+        <div className="flex flex-col items-start md:items-center">
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
             Khám phá
           </p>
-          <ul className="mt-6 space-y-3 font-serif-cap text-[11px] text-champagne/70">
-            <li><Link to="/journey" className="hover:text-champagne">Hành trình</Link></li>
-            <li><Link to="/gallery" className="hover:text-champagne">Thư viện</Link></li>
-            <li><Link to="/journal" className="hover:text-champagne">Tin tức</Link></li>
-            <li><Link to="/contact" className="hover:text-champagne">Liên hệ</Link></li>
+          <ul className="mt-5 flex flex-col gap-3 md:items-center">
+            {sitemap.map((s) => (
+              <li key={s.to}>
+                <Link
+                  to={s.to}
+                  className="font-serif-cap text-[11px] text-champagne/70 transition-colors hover:text-champagne"
+                >
+                  {s.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
-        <div className="md:col-span-4">
+        {/* Right — email + socials */}
+        <div className="flex flex-col items-start md:items-end md:text-right">
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
-            Xưởng nghệ thuật
+            Liên hệ
           </p>
-          <div className="mt-6 space-y-5 text-xs tracking-[0.1em] text-champagne/55">
-            <div>
-              <p className="font-serif-cap text-[11px] text-champagne">Hà Nội</p>
-              <p className="mt-1">28 Phố Hàng Khay · Hoàn Kiếm</p>
-            </div>
-            <div>
-              <p className="font-serif-cap text-[11px] text-champagne">Liên hệ</p>
-              <p className="mt-1">heritage@sonmai.vn · +84 123 456 789</p>
-            </div>
+          <a
+            href="mailto:heritage@sonmai.vn"
+            className="mt-5 font-display text-base text-champagne transition-colors hover:text-shimmer md:text-lg"
+          >
+            heritage@sonmai.vn
+          </a>
+          <p className="mt-2 font-sans text-[11px] tracking-[0.12em] text-champagne/50">
+            +84 123 456 789
+          </p>
+
+          <div className="mt-6 flex gap-3">
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex size-9 items-center justify-center border border-champagne/25 font-sans text-[9px] tracking-eyebrow uppercase text-champagne/60 transition-colors hover:border-champagne hover:text-champagne"
+              >
+                {s.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>
 
       <div className="mx-auto mt-10 flex max-w-[1280px] items-center justify-between border-t border-champagne/10 pt-5 font-sans text-[9px] tracking-cinzel uppercase text-champagne/30">
         <span>© MCMXXIV — MMXXX · Sơn Mài Di Sản</span>
-        <span className="hidden md:block">Một Thế Kỷ Trong Bóng Tối</span>
+        <span className="hidden md:block">Hà Nội — Việt Nam</span>
       </div>
     </footer>
   );
