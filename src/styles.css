@@ -134,6 +134,11 @@
     position: relative;
   }
 
+  h1, h2, h3, h4, h5, h6,
+  blockquote, button, input, select, textarea, label, a, p, span, li {
+    font-family: var(--font-sans);
+  }
+
   /* Subtle gold ambient — far less than before to keep pure black gala */
   body::before {
     content: "";
