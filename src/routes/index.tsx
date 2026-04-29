@@ -6,6 +6,7 @@ import { HomeIntro } from "@/components/home/HomeIntro";
 import { HomePresence } from "@/components/home/HomePresence";
 import { HomeFeatured } from "@/components/home/HomeFeatured";
 import { HomeReflections } from "@/components/home/HomeReflections";
+import { HomeNewsletter } from "@/components/home/HomeNewsletter";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,6 +41,7 @@ function IndexPage() {
         <HomePresence />
         <HomeFeatured />
         <HomeReflections />
+        <HomeNewsletter />
       </main>
       <SiteFooter />
     </div>
