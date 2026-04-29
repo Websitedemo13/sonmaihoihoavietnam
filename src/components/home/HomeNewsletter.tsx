@@ -35,16 +35,8 @@ export function HomeNewsletter() {
 
         <form
           onSubmit={onSubmit}
-          className="mx-auto mt-10 flex max-w-md flex-col items-stretch gap-3 sm:flex-row"
+          className="mx-auto mt-10 flex max-w-md items-center justify-center"
         >
-          <input
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email của bạn"
-            className="flex-1 border border-champagne/25 bg-black/40 px-5 py-3 font-sans text-[12px] tracking-[0.12em] text-champagne placeholder:text-champagne/30 outline-none transition-colors focus:border-champagne"
-          />
           <button
             type="submit"
             className="btn-gold inline-flex items-center justify-center gap-3 px-7 py-3 font-sans text-[10px] tracking-cinzel uppercase"
