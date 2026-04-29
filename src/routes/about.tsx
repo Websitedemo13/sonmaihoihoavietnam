@@ -5,6 +5,7 @@ import { HeroCircle } from "@/components/home/HeroCircle";
 import { HeritageTimeline } from "@/components/home/HeritageTimeline";
 import { HeritagePedestals } from "@/components/home/HeritagePedestals";
 import { CtaFooter } from "@/components/home/CtaFooter";
+import { AboutStory } from "@/components/home/AboutStory";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -32,6 +33,7 @@ function AboutPage() {
       <SiteHeader />
       <main>
         <HeroCircle />
+        <AboutStory />
         <HeritageTimeline />
         <HeritagePedestals />
         <CtaFooter />
