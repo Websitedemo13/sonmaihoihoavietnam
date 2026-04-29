@@ -54,7 +54,7 @@ function JournalPage() {
         <section className="relative px-6 py-32 md:px-12">
           <div className="mx-auto max-w-[1600px] space-y-44">
             {/* Article 1 */}
-            <article className="grid grid-cols-12 items-center gap-8">
+            <article id="uy-son" className="grid grid-cols-12 items-center gap-8 scroll-mt-32">
               <div className="col-span-12 md:col-span-5">
                 <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
                   Khối cảm hứng · 01
@@ -97,7 +97,7 @@ function JournalPage() {
             </article>
 
             {/* Article 2 */}
-            <article className="grid grid-cols-12 gap-8">
+            <article id="chat-lieu" className="grid grid-cols-12 gap-8 scroll-mt-32">
               <div className="col-span-12 md:col-span-7">
                 <div className="relative aspect-[4/5] overflow-hidden ring-1 ring-champagne/10">
                   <img src={artisan} alt="" loading="lazy" width={1024} height={1280} className="h-full w-full object-cover" />
@@ -148,7 +148,7 @@ function JournalPage() {
             </article>
 
             {/* Article 4 */}
-            <article className="mx-auto grid max-w-5xl grid-cols-12 items-end gap-8">
+            <article id="ky-luc-100-nam" className="mx-auto grid max-w-5xl grid-cols-12 items-end gap-8 scroll-mt-32">
               <div className="col-span-12 md:col-span-5">
                 <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
                   Giao thoa di sản · 04
