@@ -73,10 +73,15 @@ export function HomeNewsletter() {
         >
           <button
             type="submit"
-            className="btn-gold inline-flex items-center justify-center gap-3 px-7 py-3 font-sans text-[10px] tracking-cinzel uppercase"
+            className="group relative inline-flex items-center justify-center gap-3 overflow-hidden border border-champagne/70 bg-transparent px-10 py-4 font-sans text-[10px] tracking-cinzel uppercase text-champagne transition-colors duration-500 hover:text-black"
           >
-            <span>Theo dõi hành trình</span>
-            <span className="font-display">→</span>
+            {/* Sliding gold fill */}
+            <span
+              aria-hidden
+              className="absolute inset-0 -translate-x-full bg-gradient-to-r from-[#8a6a1a] via-[#f3dc8a] to-[#8a6a1a] transition-transform duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-0"
+            />
+            <span className="relative">Theo dõi hành trình</span>
+            <span className="relative font-display transition-transform duration-500 group-hover:translate-x-1">→</span>
           </button>
         </form>
 
