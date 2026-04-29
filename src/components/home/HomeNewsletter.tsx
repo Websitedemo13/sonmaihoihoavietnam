@@ -1,0 +1,69 @@
+import { useState } from "react";
+
+export function HomeNewsletter() {
+  const [email, setEmail] = useState("");
+  const [sent, setSent] = useState(false);
+
+  const onSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    setSent(true);
+    setTimeout(() => setSent(false), 4000);
+    setEmail("");
+  };
+
+  return (
+    <section className="relative overflow-hidden bg-black px-6 py-20 md:py-28">
+      {/* Top & bottom gold threads */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/60 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-champagne/30 to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_50%,rgba(212,175,55,0.06),transparent_70%)]" />
+
+      <div className="relative mx-auto max-w-2xl text-center">
+        <p className="font-sans text-[10px] tracking-cinzel uppercase text-champagne/65">
+          Ghi Danh Vào Lịch Sử
+        </p>
+
+        <h2 className="font-display mt-5 text-2xl leading-[1.15] text-champagne tracking-cinzel md:text-4xl">
+          <span className="gold-leaf">Khoảnh Khắc Vĩnh Cửu</span>
+        </h2>
+
+        <p className="mx-auto mt-5 max-w-[44ch] font-sans text-[12px] leading-[1.9] tracking-[0.14em] text-champagne/60 md:text-[13px]">
+          Trở thành một phần của hành trình trăm năm — nơi nhựa sơn,
+          lá vàng và tĩnh lặng cùng viết tiếp di sản.
+        </p>
+
+        <form
+          onSubmit={onSubmit}
+          className="mx-auto mt-10 flex max-w-md flex-col items-stretch gap-3 sm:flex-row"
+        >
+          <input
+            type="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email của bạn"
+            className="flex-1 border border-champagne/25 bg-black/40 px-5 py-3 font-sans text-[12px] tracking-[0.12em] text-champagne placeholder:text-champagne/30 outline-none transition-colors focus:border-champagne"
+          />
+          <button
+            type="submit"
+            className="btn-gold inline-flex items-center justify-center gap-3 px-7 py-3 font-sans text-[10px] tracking-cinzel uppercase"
+          >
+            <span>Theo dõi hành trình</span>
+            <span className="font-display">→</span>
+          </button>
+        </form>
+
+        {sent && (
+          <p className="mt-5 font-sans text-[10px] tracking-cinzel uppercase text-champagne/80">
+            Cảm ơn bạn — chúng tôi sẽ gửi những khoảnh khắc đầu tiên sớm nhất.
+          </p>
+        )}
+
+        <p className="mt-8 font-sans text-[9px] tracking-cinzel uppercase text-champagne/35">
+          Mỗi tác phẩm · Giám định · Mã định danh di sản
+        </p>
+      </div>
+    </section>
+  );
+}
