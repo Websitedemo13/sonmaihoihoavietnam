@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "@tanstack/react-router";
 import r1 from "@/assets/journal-artisan.jpg";
 import r2 from "@/assets/journal-forest.jpg";
 import r3 from "@/assets/value-passion.jpg";
@@ -11,6 +12,7 @@ const posts = [
     excerpt:
       "Khi bóng tối được nâng niu đủ lâu, ánh vàng tự tìm đường trở về.",
     date: "12 · 04 · 2026",
+    hash: "uy-son",
   },
   {
     img: r2,
@@ -19,6 +21,7 @@ const posts = [
     excerpt:
       "Nhựa sơn ta, vỏ trứng, vàng lá — ba ngôn ngữ kể một câu chuyện.",
     date: "28 · 03 · 2026",
+    hash: "chat-lieu",
   },
   {
     img: r3,
@@ -27,6 +30,7 @@ const posts = [
     excerpt:
       "Trăm năm ủ trong im lặng — để khoảnh khắc bừng sáng được vĩnh cửu.",
     date: "05 · 03 · 2026",
+    hash: "ky-luc-100-nam",
   },
 ];
 
@@ -80,7 +84,11 @@ export function HomeReflections() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {posts.map((p) => (
             <MagneticCard key={p.title}>
-              <article className="group flex flex-col bg-black ring-1 ring-champagne/10 transition-all duration-700 hover:ring-champagne/40">
+              <Link
+                to="/journal"
+                hash={p.hash}
+                className="group flex flex-col bg-black ring-1 ring-champagne/10 transition-all duration-700 hover:ring-champagne/40"
+              >
                 <figure className="relative aspect-[4/5] overflow-hidden">
                   <img
                     src={p.img}
@@ -104,9 +112,14 @@ export function HomeReflections() {
                   <p className="font-sans text-[12px] leading-[1.85] tracking-[0.06em] text-champagne/55">
                     {p.excerpt}
                   </p>
-                  <div className="mt-2 h-px w-8 bg-champagne/40 transition-all duration-700 group-hover:w-20 group-hover:bg-champagne" />
+                  <div className="mt-2 flex items-center gap-3">
+                    <div className="h-px w-8 bg-champagne/40 transition-all duration-700 group-hover:w-20 group-hover:bg-champagne" />
+                    <span className="font-sans text-[9px] tracking-cinzel uppercase text-champagne/50 transition-colors group-hover:text-champagne">
+                      Đọc bài →
+                    </span>
+                  </div>
                 </div>
-              </article>
+              </Link>
             </MagneticCard>
           ))}
         </div>
