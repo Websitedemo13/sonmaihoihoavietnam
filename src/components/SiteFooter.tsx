@@ -18,7 +18,7 @@ const socials = [
 
 export function SiteFooter() {
   return (
-    <footer className="relative border-t border-champagne/20 bg-black px-6 py-12 md:px-12 md:py-14">
+    <footer className="relative border-t border-champagne/20 bg-black/70 backdrop-blur-md px-6 py-12 md:px-12 md:py-14">
       <div className="mx-auto grid max-w-[1280px] gap-10 md:grid-cols-3 md:gap-12">
         {/* Left — logo + slogan */}
         <div className="flex flex-col items-start">

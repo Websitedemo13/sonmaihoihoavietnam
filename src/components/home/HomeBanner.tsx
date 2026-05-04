@@ -23,7 +23,7 @@ export function HomeBanner() {
   return (
     <section
       ref={ref}
-      className="relative min-h-dvh w-full overflow-hidden bg-black"
+      className="relative min-h-dvh w-full overflow-hidden"
     >
       {/* Cinematic background */}
       <div

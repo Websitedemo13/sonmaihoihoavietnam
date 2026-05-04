@@ -41,7 +41,7 @@ export function HomeManifesto() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-black px-6 py-14 md:py-20"
+      className="relative overflow-hidden px-6 py-14 md:py-20"
     >
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/50 to-transparent" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_50%_50%,rgba(243,229,171,0.05),transparent_70%)]" />
