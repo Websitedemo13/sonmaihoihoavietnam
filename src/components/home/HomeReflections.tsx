@@ -65,7 +65,7 @@ function MagneticCard({ children }: { children: React.ReactNode }) {
 
 export function HomeReflections() {
   return (
-    <section className="relative bg-black px-6 py-12 md:py-20">
+    <section className="relative px-6 py-12 md:py-20">
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-12 flex flex-col items-start gap-3 md:flex-row md:items-end md:justify-between">
           <div>

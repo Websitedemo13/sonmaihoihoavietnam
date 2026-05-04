@@ -29,7 +29,7 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   return (
-    <div className="min-h-dvh bg-black text-foreground">
+    <div className="min-h-dvh text-foreground">
       <SiteHeader />
       <main>
         <HeroCircle />

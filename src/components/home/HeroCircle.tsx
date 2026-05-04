@@ -2,7 +2,7 @@ import heroImg from "@/assets/lacquer-hero.jpg";
 
 export function HeroCircle() {
   return (
-    <section className="relative min-h-dvh w-full overflow-hidden bg-black">
+    <section className="relative min-h-dvh w-full overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_50%,rgba(212,175,55,0.05),transparent_70%)]" />
 
       <div className="relative z-10 flex min-h-dvh flex-col items-center justify-center px-6 pt-28 pb-16 md:pt-32">

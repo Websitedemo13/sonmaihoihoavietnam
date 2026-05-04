@@ -23,7 +23,7 @@ export function HomeFeatured() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-black px-0 py-0"
+      className="relative overflow-hidden px-0 py-0"
     >
       <div className="mx-auto grid min-h-[80dvh] max-w-[1600px] grid-cols-1 md:grid-cols-2">
         {/* Left — large image with parallax */}
