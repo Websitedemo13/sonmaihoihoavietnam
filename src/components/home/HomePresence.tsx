@@ -43,7 +43,7 @@ export function HomePresence() {
   }, []);
 
   return (
-    <section className="relative bg-black px-6 py-16 md:py-24">
+    <section className="relative bg-black px-6 py-12 md:py-20">
       <div ref={ref} className="mx-auto max-w-[1280px]">
         <div className="mb-12 text-center">
           <p className="font-sans text-[10px] tracking-cinzel uppercase text-champagne/60">

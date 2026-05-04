@@ -52,7 +52,7 @@ export function HeritageTimeline() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-black px-6 py-20 md:py-28">
+    <section className="relative overflow-hidden bg-black px-6 py-14 md:py-20">
       {/* Ambient gold radial */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_50%_50%,rgba(212,175,55,0.05),transparent_70%)]" />
       {/* Gold threads top/bottom */}
@@ -135,7 +135,7 @@ export function HeritageTimeline() {
                     <h3 className="font-display text-base tracking-cinzel text-champagne md:text-lg">
                       {m.title}
                     </h3>
-                    <p className="mt-3 font-sans text-[12px] leading-[1.95] tracking-[0.1em] text-champagne/55 md:text-[13px]">
+                    <p className="mt-3 font-sans text-[13px] leading-[2] tracking-[0.08em] text-foreground/80 md:text-[13.5px]">
                       {m.body}
                     </p>
                   </div>
