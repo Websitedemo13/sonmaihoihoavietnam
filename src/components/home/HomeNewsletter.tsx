@@ -40,7 +40,7 @@ export function HomeNewsletter() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-black px-6 py-20 md:py-28"
+      className="relative overflow-hidden bg-black px-6 py-14 md:py-20"
     >
       {/* Top & bottom gold threads */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/60 to-transparent" />
