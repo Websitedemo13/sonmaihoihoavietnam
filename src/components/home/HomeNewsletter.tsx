@@ -61,7 +61,7 @@ export function HomeNewsletter() {
         </h2>
 
         <p
-          className={`mx-auto mt-5 max-w-[44ch] font-sans text-[12px] leading-[1.9] tracking-[0.14em] text-champagne/60 md:text-[13px] ${slide("delay-200")}`}
+          className={`mx-auto mt-5 max-w-[44ch] font-sans text-[13px] leading-[2] tracking-[0.1em] text-foreground/80 md:text-sm ${slide("delay-200")}`}
         >
           Trở thành một phần của hành trình trăm năm — nơi nhựa sơn,
           lá vàng và tĩnh lặng cùng viết tiếp di sản.

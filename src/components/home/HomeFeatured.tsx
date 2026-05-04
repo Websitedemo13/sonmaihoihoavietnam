@@ -72,7 +72,7 @@ export function HomeFeatured() {
             </span>
           </div>
 
-          <p className="mt-8 max-w-md font-sans text-[12px] leading-[1.9] tracking-[0.1em] text-champagne/55">
+          <p className="mt-8 max-w-md font-sans text-[13px] leading-[2] tracking-[0.08em] text-foreground/85">
             Sơn ta · Vàng lá 24K · Vỏ trứng — trên gỗ ván ép truyền thống.
             120 × 180 cm · Hà Nội.
           </p>

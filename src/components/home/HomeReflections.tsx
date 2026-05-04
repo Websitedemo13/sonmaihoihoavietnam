@@ -109,7 +109,7 @@ export function HomeReflections() {
                   <h3 className="font-display text-base leading-[1.25] text-champagne md:text-lg">
                     {p.title}
                   </h3>
-                  <p className="font-sans text-[12px] leading-[1.85] tracking-[0.06em] text-champagne/55">
+                  <p className="font-sans text-[13px] leading-[1.95] tracking-[0.06em] text-foreground/80">
                     {p.excerpt}
                   </p>
                   <div className="mt-2 flex items-center gap-3">

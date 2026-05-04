@@ -89,7 +89,7 @@ export function HomeBanner() {
           </h1>
 
           <p
-            className="mx-auto mt-8 max-w-xl font-sans text-[11px] leading-[2] tracking-[0.16em] text-champagne/55 md:text-xs"
+            className="mx-auto mt-8 max-w-xl font-sans text-[12px] leading-[2] tracking-[0.14em] text-foreground/80 md:text-[13px]"
             style={{ animation: "fade-up 1.2s 1s both" }}
           >
             Một thế kỷ ủ nhựa sơn trong bóng tối — nay bừng sáng cùng thời đại.

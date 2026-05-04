@@ -71,8 +71,8 @@ export function HomeIntro() {
                 style={{
                   color:
                     i < lit
-                      ? "rgba(243,220,138,0.95)"
-                      : "rgba(212,175,55,0.18)",
+                      ? "#F9F9F9"
+                      : "rgba(243,229,171,0.28)",
                 }}
               >
                 {w}{" "}
