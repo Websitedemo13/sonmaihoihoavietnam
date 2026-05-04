@@ -32,7 +32,7 @@ export function HomeIntro() {
   return (
     <section
       ref={ref}
-      className="relative bg-black px-6 py-12 md:py-18"
+      className="relative bg-black px-6 py-12 md:py-20"
     >
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-16">
         {/* Left — image */}
