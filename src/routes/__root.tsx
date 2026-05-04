@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
@@ -58,8 +59,12 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <link rel="preload" as="image" href="/lacquer-bg-768.webp" type="image/webp" media="(max-width: 767px)" />
+        <link rel="preload" as="image" href="/lacquer-bg-1280.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" />
+        <link rel="preload" as="image" href="/lacquer-bg-1920.webp" type="image/webp" media="(min-width: 1280px)" />
       </head>
       <body>
+        <div className="lacquer-shimmer" aria-hidden />
         {children}
         <Scripts />
       </body>
@@ -68,5 +73,38 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
+  useEffect(() => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    const wide = window.matchMedia("(min-width: 768px)").matches;
+    if (reduce || !fine || !wide) return;
+
+    const body = document.body;
+    let scrollTimer: ReturnType<typeof setTimeout> | null = null;
+
+    const enable = () => body.classList.add("lacquer-shimmer-on");
+    const disable = () => body.classList.remove("lacquer-shimmer-on");
+
+    const onMove = () => {
+      enable();
+      if (scrollTimer) clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(disable, 2400);
+    };
+    const onScroll = () => {
+      enable();
+      if (scrollTimer) clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(disable, 1600);
+    };
+
+    window.addEventListener("mousemove", onMove, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("scroll", onScroll);
+      if (scrollTimer) clearTimeout(scrollTimer);
+      disable();
+    };
+  }, []);
+
   return <Outlet />;
 }

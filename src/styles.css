@@ -147,13 +147,17 @@
     font-family: var(--font-sans);
   }
 
-  /* Polished black lacquer with golden inlays — global backdrop */
+  /* Polished black lacquer with golden inlays — global backdrop.
+     Responsive sources via image-set; no background-attachment:fixed
+     (uses position:fixed instead — kinder to mobile / weak GPUs).
+     Promoted to its own compositor layer to avoid scroll repaints. */
   body::before {
     content: "";
     position: fixed;
     inset: -4%;
     z-index: 0;
     pointer-events: none;
+    background-color: #000;
     background-image:
       linear-gradient(
         to bottom,
@@ -161,13 +165,81 @@
         rgba(0, 0, 0, 0.86) 50%,
         rgba(0, 0, 0, 0.92)
       ),
-      url("/lacquer-bg.jpg");
+      image-set(
+        url("/lacquer-bg-768.webp") type("image/webp") 1x,
+        url("/lacquer-bg-768.jpg") type("image/jpeg") 1x
+      );
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-    background-attachment: fixed, fixed;
     filter: blur(6px) saturate(1.05);
-    transform: scale(1.04);
+    transform: translateZ(0) scale(1.04);
+    will-change: transform;
+    contain: paint;
+  }
+  @media (min-width: 768px) {
+    body::before {
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.78),
+          rgba(0, 0, 0, 0.86) 50%,
+          rgba(0, 0, 0, 0.92)
+        ),
+        image-set(
+          url("/lacquer-bg-1280.webp") type("image/webp") 1x,
+          url("/lacquer-bg-1280.jpg") type("image/jpeg") 1x
+        );
+    }
+  }
+  @media (min-width: 1280px) {
+    body::before {
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.78),
+          rgba(0, 0, 0, 0.86) 50%,
+          rgba(0, 0, 0, 0.92)
+        ),
+        image-set(
+          url("/lacquer-bg-1920.webp") type("image/webp") 1x,
+          url("/lacquer-bg.jpg") type("image/jpeg") 1x
+        );
+    }
+  }
+
+  /* Very subtle gold-inlay shimmer — slow horizontal sweep.
+     Disabled for prefers-reduced-motion and on small/touch devices. */
+  body > .lacquer-shimmer {
+    position: fixed;
+    inset: -10% -20%;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(
+        110deg,
+        transparent 35%,
+        rgba(243, 220, 138, 0.05) 48%,
+        rgba(255, 246, 200, 0.09) 50%,
+        rgba(243, 220, 138, 0.05) 52%,
+        transparent 65%
+      );
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+    will-change: transform, opacity;
+  }
+  body.lacquer-shimmer-on > .lacquer-shimmer {
+    opacity: 1;
+    animation: lacquer-sweep 14s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body.lacquer-shimmer-on > .lacquer-shimmer { animation: none; }
+  }
+
+  @keyframes lacquer-sweep {
+    0%   { transform: translate3d(-30%, 0, 0); }
+    100% { transform: translate3d(30%, 0, 0); }
   }
 
   /* Very faint gold dust */
