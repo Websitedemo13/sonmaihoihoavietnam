@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 export function CtaFooter() {
   return (
-    <section className="relative overflow-hidden glossy-black px-6 py-14 md:py-20">
+    <section className="relative overflow-hidden glossy-black px-6 py-10 md:py-14">
       {/* Top gold thread */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/60 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-champagne/30 to-transparent" />

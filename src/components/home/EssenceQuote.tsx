@@ -1,6 +1,6 @@
 export function EssenceQuote() {
   return (
-    <section className="relative px-6 py-12 md:py-16">
+    <section className="relative px-6 py-10 md:py-14">
       <div className="mx-auto max-w-3xl">
         {/* Slim vertical rectangular frame */}
         <div className="relative mx-auto border border-champagne/30 px-8 py-12 md:px-14 md:py-16">
