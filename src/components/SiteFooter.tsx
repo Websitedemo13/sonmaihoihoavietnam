@@ -41,11 +41,11 @@ export function SiteFooter() {
         </div>
 
         {/* Center — sitemap */}
-        <div className="flex flex-col items-start md:items-center">
+        <div className="flex flex-col items-start">
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
             Khám phá
           </p>
-          <ul className="mt-5 flex flex-col gap-3 md:items-center">
+          <ul className="mt-5 flex flex-col gap-3 items-start">
             {sitemap.map((s) => (
               <li key={s.to}>
                 <Link
