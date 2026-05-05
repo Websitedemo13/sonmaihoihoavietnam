@@ -88,7 +88,8 @@ function JourneyPage() {
             MMXXVI — MMXXX · Hành Trình Nghệ Thuật
           </p>
           <h1 className="font-display mx-auto mt-8 max-w-[16ch] text-5xl uppercase leading-[0.95] text-champagne md:text-7xl lg:text-[6.5rem]">
-            Một Thập Kỷ <span className="text-shimmer">Hoàn Mỹ</span>
+            <span className="block whitespace-nowrap">Một Thập Kỷ</span>
+            <span className="block whitespace-nowrap text-shimmer">Hoàn Mỹ</span>
           </h1>
           <p className="mx-auto mt-12 max-w-[52ch] text-xs leading-loose tracking-[0.15em] text-champagne/55">
             Năm năm để tạo nên di sản. Trong một thập kỷ tới, chúng tôi

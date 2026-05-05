@@ -21,7 +21,7 @@ const pedestals = [
 
 export function HeritagePedestals() {
   return (
-    <section className="relative px-6 py-12 md:py-16">
+    <section className="relative px-6 py-10 md:py-14">
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-8 text-center">
           <p className="font-sans text-[10px] tracking-cinzel uppercase text-champagne/60">

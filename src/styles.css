@@ -86,9 +86,9 @@
   --radius: 0;
   /* Pure absolute black */
   --pitch: oklch(0 0 0);
-  /* Bright Champagne Gold #F3E5AB */
-  --champagne: oklch(0.92 0.08 95);
-  --champagne-soft: oklch(0.96 0.05 95);
+  /* Bright Champagne Gold #F3E5AB — high-contrast against lacquer */
+  --champagne: oklch(0.94 0.09 95);
+  --champagne-soft: oklch(0.97 0.05 95);
   --ivory: oklch(0.985 0.002 90);
   --crimson: oklch(0.58 0.2 38);
   --crimson-deep: oklch(0.4 0.16 36);
@@ -141,6 +141,15 @@
   h3 { font-size: 1.05rem; line-height: 1.3; }
   h4 { font-size: 0.95rem; line-height: 1.35; }
   h5, h6 { font-size: 0.85rem; line-height: 1.4; }
+
+  /* Semantic line-breaking — prevents orphans on headings, keeps
+     phrases like "MỘT THẾ KỶ / KHÔNG NGỪNG CHẢY" balanced. */
+  h1, h2, h3, h4, h5, h6, blockquote {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
 
   h1, h2, h3, h4, h5, h6,
   blockquote, button, input, select, textarea, label, a, p, span, li {

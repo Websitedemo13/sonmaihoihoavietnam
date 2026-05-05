@@ -34,7 +34,7 @@ const chapters = [
 
 export function AboutStory() {
   return (
-    <section className="relative px-6 py-16 md:py-24">
+    <section className="relative px-6 py-10 md:py-14">
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-14 text-center">
           <p className="font-sans text-[10px] tracking-cinzel uppercase text-champagne/60">

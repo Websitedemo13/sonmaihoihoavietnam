@@ -16,7 +16,7 @@ const items = [
 
 export function PresenceGrid() {
   return (
-    <section className="relative px-6 py-12 md:py-16">
+    <section className="relative px-6 py-10 md:py-14">
       <div className="mx-auto max-w-[1280px]">
         <div className="mb-8 flex flex-col items-start gap-3 md:flex-row md:items-end md:justify-between">
           <div>
