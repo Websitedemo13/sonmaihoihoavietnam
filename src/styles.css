@@ -142,6 +142,15 @@
   h4 { font-size: 0.95rem; line-height: 1.35; }
   h5, h6 { font-size: 0.85rem; line-height: 1.4; }
 
+  /* Semantic line-breaking — prevents orphans on headings, keeps
+     phrases like "MỘT THẾ KỶ / KHÔNG NGỪNG CHẢY" balanced. */
+  h1, h2, h3, h4, h5, h6, blockquote {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+
   h1, h2, h3, h4, h5, h6,
   blockquote, button, input, select, textarea, label, a, p, span, li {
     font-family: var(--font-sans);
