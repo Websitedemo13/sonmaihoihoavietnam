@@ -45,7 +45,7 @@ export function SiteFooter() {
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
             Khám phá
           </p>
-          <ul className="mt-6 grid grid-cols-2 gap-x-8 gap-y-3">
+          <ul className="mt-6 flex flex-col gap-2.5 items-start">
             {sitemap.map((s) => (
               <li key={s.to}>
                 <Link
