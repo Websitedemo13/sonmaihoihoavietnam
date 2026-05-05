@@ -86,9 +86,9 @@
   --radius: 0;
   /* Pure absolute black */
   --pitch: oklch(0 0 0);
-  /* Bright Champagne Gold #F3E5AB */
-  --champagne: oklch(0.92 0.08 95);
-  --champagne-soft: oklch(0.96 0.05 95);
+  /* Bright Champagne Gold #F3E5AB — high-contrast against lacquer */
+  --champagne: oklch(0.94 0.09 95);
+  --champagne-soft: oklch(0.97 0.05 95);
   --ivory: oklch(0.985 0.002 90);
   --crimson: oklch(0.58 0.2 38);
   --crimson-deep: oklch(0.4 0.16 36);
