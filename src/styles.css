@@ -251,6 +251,30 @@
     }
   }
 
+  /* Extra overlay layer — vignette + warm amber tint to deepen edges
+     and unify text contrast over the brightened marble background. */
+  html::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(
+        ellipse 110% 80% at 50% 50%,
+        transparent 0%,
+        rgba(0, 0, 0, 0.18) 55%,
+        rgba(0, 0, 0, 0.55) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(10, 6, 0, 0.25) 0%,
+        rgba(0, 0, 0, 0.0) 30%,
+        rgba(0, 0, 0, 0.0) 70%,
+        rgba(10, 6, 0, 0.35) 100%
+      );
+    mix-blend-mode: multiply;
+  }
   /* Very subtle gold-inlay shimmer — slow horizontal sweep.
      Disabled for prefers-reduced-motion and on small/touch devices. */
   body > .lacquer-shimmer {
