@@ -170,9 +170,9 @@
     background-image:
       linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.78),
-        rgba(0, 0, 0, 0.86) 50%,
-        rgba(0, 0, 0, 0.92)
+        rgba(0, 0, 0, 0.42),
+        rgba(0, 0, 0, 0.48) 50%,
+        rgba(0, 0, 0, 0.55)
       ),
       image-set(
         url("/lacquer-bg-768.webp") type("image/webp") 1x,
@@ -181,7 +181,7 @@
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
-    filter: blur(6px) saturate(1.05);
+    filter: blur(2px) saturate(1.45) brightness(1.18) contrast(1.05);
     transform: translateZ(0) scale(1.04);
     will-change: transform;
     contain: paint;
@@ -191,9 +191,9 @@
       background-image:
         linear-gradient(
           to bottom,
-          rgba(0, 0, 0, 0.78),
-          rgba(0, 0, 0, 0.86) 50%,
-          rgba(0, 0, 0, 0.92)
+          rgba(0, 0, 0, 0.42),
+          rgba(0, 0, 0, 0.48) 50%,
+          rgba(0, 0, 0, 0.55)
         ),
         image-set(
           url("/lacquer-bg-1280.webp") type("image/webp") 1x,
@@ -206,9 +206,9 @@
       background-image:
         linear-gradient(
           to bottom,
-          rgba(0, 0, 0, 0.78),
-          rgba(0, 0, 0, 0.86) 50%,
-          rgba(0, 0, 0, 0.92)
+          rgba(0, 0, 0, 0.42),
+          rgba(0, 0, 0, 0.48) 50%,
+          rgba(0, 0, 0, 0.55)
         ),
         image-set(
           url("/lacquer-bg-1920.webp") type("image/webp") 1x,
