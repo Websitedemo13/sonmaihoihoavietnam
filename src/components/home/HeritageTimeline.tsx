@@ -52,7 +52,7 @@ export function HeritageTimeline() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden px-6 py-10 md:py-14">
+    <section className="section-overlay section-overlay--timeline relative overflow-hidden px-6 py-10 md:py-14">
       {/* Ambient gold radial */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_50%_60%_at_50%_50%,rgba(212,175,55,0.05),transparent_70%)]" />
       {/* Gold threads top/bottom */}

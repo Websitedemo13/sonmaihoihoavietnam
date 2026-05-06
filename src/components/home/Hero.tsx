@@ -2,7 +2,7 @@ import heroImg from "@/assets/lacquer-hero.jpg";
 
 export function Hero() {
   return (
-    <section className="relative min-h-dvh w-full overflow-hidden">
+    <section className="section-overlay section-overlay--hero relative min-h-dvh w-full overflow-hidden">
       {/* Hero background — wet lacquer */}
       <div className="absolute inset-0">
         <img
