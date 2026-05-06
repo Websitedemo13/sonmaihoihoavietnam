@@ -142,9 +142,18 @@
   h4 { font-size: 0.95rem; line-height: 1.35; }
   h5, h6 { font-size: 0.85rem; line-height: 1.4; }
 
-  /* Bright champagne for hero headers — pops against brighter lacquer */
+  /* Heading typography — Noto Serif Display */
   h1, h2 {
-    color: #FFF3B0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: #F3E5AB;
+    letter-spacing: 0.04em;
+  }
+  h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    color: #F3E5AB;
+    letter-spacing: 0.03em;
   }
 
   /* Readability shadow against the brightened lacquer background */
@@ -155,14 +164,18 @@
   /* Semantic line-breaking — prevents orphans on multi-word phrases. */
   h1, h2, h3, h4, h5, h6, blockquote {
     text-wrap: balance;
+    word-spacing: 0.02em;
   }
-  p {
+  p, li, label {
     text-wrap: pretty;
   }
 
-  h1, h2, h3, h4, h5, h6,
-  blockquote, button, input, select, textarea, label, a, p, span, li {
+  /* Body typography — Noto Sans (SN Flex) */
+  p, li, label, button, input, select, textarea, span, a {
     font-family: var(--font-sans);
+  }
+  blockquote {
+    font-family: var(--font-display);
   }
 
   /* Polished black lacquer with golden inlays — global backdrop.
