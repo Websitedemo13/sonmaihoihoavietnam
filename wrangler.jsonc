@@ -1,8 +1,7 @@
-//D:\JOBS\sonmaihoihoavietnam\wrangler.jsonc
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "tanstack-start-app",
-  "compatibility_date": "2025-09-24",
+  "name": "sonmaihoihoavietnam",
+  "compatibility_date": "2026-05-12",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "@tanstack/react-start/server-entry",
+  "main": "@tanstack/react-start/server-entry"
 }
