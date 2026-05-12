@@ -24,8 +24,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:description",
-        content:
-          "Nghệ thuật không chỉ được nhìn — nó được cảm nhận từ trong tĩnh lặng.",
+        content: "Nghệ thuật không chỉ được nhìn — nó được cảm nhận từ trong tĩnh lặng.",
       },
     ],
   }),

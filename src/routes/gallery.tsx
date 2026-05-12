@@ -40,12 +40,72 @@ type Work = {
 };
 
 const works: Work[] = [
-  { id: 1, title: "Ánh Sáng Trong Vóc", year: "MMXXVI", img: g1, materials: "Sơn mài truyền thống · Dát vàng 24K · Khảm vỏ trứng", concept: "Tác phẩm đại diện cho sự khởi đầu của hành trình kỷ lục. Sự tương phản giữa nhựa sơn đen thẳm và những lá vàng mỏng manh đại diện cho sức sống bền bỉ của nghệ thuật di sản qua một thế kỷ.", edition: "Độc bản · Mã DS-001", height: "tall" },
-  { id: 2, title: "Đối Thoại Bóng Tối", year: "MMXXV", img: g2, materials: "Cánh gián · khảm vàng · nhựa sơn ta", concept: "Mười bảy lớp sơn ta xếp chồng — một cuộc đối thoại giữa nghệ nhân và bóng tối của phòng ủ. Vàng lá vẽ kiến trúc rễ ẩn bên dưới sắc đỏ trầm.", edition: "Phiên bản 3 chiếc", height: "short" },
-  { id: 3, title: "Bình Phong Sương", year: "MMXXIV", img: g3, materials: "Sơn mài · Vàng lá · Khung gỗ sồi chạm", concept: "Một phong cảnh sương mù và thông trỗi dậy từ sắc đen tuyệt đối — chỉ hiện hữu với đôi mắt kiên nhẫn. Tác phẩm thuộc tuyển tập Di Sản 100 Năm.", edition: "Độc bản", height: "tall" },
-  { id: 4, title: "Bản Đồ Vỏ Trứng", year: "MMXXIII", img: g4, materials: "Vỏ trứng nghiền · Sơn ta · Bột vàng", concept: "Mười nghìn mảnh vỡ xếp tay. Một bản đồ vũ trụ vẽ bằng chất liệu mong manh nhất — vết nứt không bị che giấu, chính là bố cục.", edition: "Độc bản", height: "short" },
-  { id: 5, title: "Nhựa Của Rừng", year: "MMXXII", img: hero, materials: "Nhựa sơn ta nguyên chất · Obsidian", concept: "Tấm gương không được vẽ. Nó được nuôi — qua kiên nhẫn, qua từng lớp, qua sự tĩnh lặng của phòng ủ Phú Thọ.", edition: "Phiên bản 5 chiếc", height: "wide" },
-  { id: 6, title: "Tấm Sơn Vương Giả", year: "MMXXVI", img: panel, materials: "Vàng 24K · Cánh gián · Vỏ trứng · Sơn ta", concept: "Một tấm panel cô đọng toàn bộ ngôn ngữ của xưởng. Tác phẩm đương đại định nghĩa Kỷ Lục 2026 — chứng nhân cho tầm vóc thời đại.", edition: "Độc bản · Mã DS-006", height: "tall" },
+  {
+    id: 1,
+    title: "Ánh Sáng Trong Vóc",
+    year: "MMXXVI",
+    img: g1,
+    materials: "Sơn mài truyền thống · Dát vàng 24K · Khảm vỏ trứng",
+    concept:
+      "Tác phẩm đại diện cho sự khởi đầu của hành trình kỷ lục. Sự tương phản giữa nhựa sơn đen thẳm và những lá vàng mỏng manh đại diện cho sức sống bền bỉ của nghệ thuật di sản qua một thế kỷ.",
+    edition: "Độc bản · Mã DS-001",
+    height: "tall",
+  },
+  {
+    id: 2,
+    title: "Đối Thoại Bóng Tối",
+    year: "MMXXV",
+    img: g2,
+    materials: "Cánh gián · khảm vàng · nhựa sơn ta",
+    concept:
+      "Mười bảy lớp sơn ta xếp chồng — một cuộc đối thoại giữa nghệ nhân và bóng tối của phòng ủ. Vàng lá vẽ kiến trúc rễ ẩn bên dưới sắc đỏ trầm.",
+    edition: "Phiên bản 3 chiếc",
+    height: "short",
+  },
+  {
+    id: 3,
+    title: "Bình Phong Sương",
+    year: "MMXXIV",
+    img: g3,
+    materials: "Sơn mài · Vàng lá · Khung gỗ sồi chạm",
+    concept:
+      "Một phong cảnh sương mù và thông trỗi dậy từ sắc đen tuyệt đối — chỉ hiện hữu với đôi mắt kiên nhẫn. Tác phẩm thuộc tuyển tập Di Sản 100 Năm.",
+    edition: "Độc bản",
+    height: "tall",
+  },
+  {
+    id: 4,
+    title: "Bản Đồ Vỏ Trứng",
+    year: "MMXXIII",
+    img: g4,
+    materials: "Vỏ trứng nghiền · Sơn ta · Bột vàng",
+    concept:
+      "Mười nghìn mảnh vỡ xếp tay. Một bản đồ vũ trụ vẽ bằng chất liệu mong manh nhất — vết nứt không bị che giấu, chính là bố cục.",
+    edition: "Độc bản",
+    height: "short",
+  },
+  {
+    id: 5,
+    title: "Nhựa Của Rừng",
+    year: "MMXXII",
+    img: hero,
+    materials: "Nhựa sơn ta nguyên chất · Obsidian",
+    concept:
+      "Tấm gương không được vẽ. Nó được nuôi — qua kiên nhẫn, qua từng lớp, qua sự tĩnh lặng của phòng ủ Phú Thọ.",
+    edition: "Phiên bản 5 chiếc",
+    height: "wide",
+  },
+  {
+    id: 6,
+    title: "Tấm Sơn Vương Giả",
+    year: "MMXXVI",
+    img: panel,
+    materials: "Vàng 24K · Cánh gián · Vỏ trứng · Sơn ta",
+    concept:
+      "Một tấm panel cô đọng toàn bộ ngôn ngữ của xưởng. Tác phẩm đương đại định nghĩa Kỷ Lục 2026 — chứng nhân cho tầm vóc thời đại.",
+    edition: "Độc bản · Mã DS-006",
+    height: "tall",
+  },
 ];
 
 function GalleryPage() {
@@ -67,15 +127,23 @@ function GalleryPage() {
                 Tác Phẩm <span className="text-shimmer italic">Tiêu Biểu</span>
               </h1>
               <div className="mt-10 flex flex-wrap items-center gap-3 font-sans text-[9px] tracking-eyebrow uppercase">
-                <span className="border border-champagne/40 bg-champagne/10 px-4 py-2 text-champagne">Tất cả</span>
-                <span className="border border-champagne/15 px-4 py-2 text-champagne/55 transition-colors hover:border-champagne/40 hover:text-champagne">Di sản 100 năm</span>
-                <span className="border border-champagne/15 px-4 py-2 text-champagne/55 transition-colors hover:border-champagne/40 hover:text-champagne">Kỷ lục</span>
-                <span className="border border-champagne/15 px-4 py-2 text-champagne/55 transition-colors hover:border-champagne/40 hover:text-champagne">Đương đại</span>
+                <span className="border border-champagne/40 bg-champagne/10 px-4 py-2 text-champagne">
+                  Tất cả
+                </span>
+                <span className="border border-champagne/15 px-4 py-2 text-champagne/55 transition-colors hover:border-champagne/40 hover:text-champagne">
+                  Di sản 100 năm
+                </span>
+                <span className="border border-champagne/15 px-4 py-2 text-champagne/55 transition-colors hover:border-champagne/40 hover:text-champagne">
+                  Kỷ lục
+                </span>
+                <span className="border border-champagne/15 px-4 py-2 text-champagne/55 transition-colors hover:border-champagne/40 hover:text-champagne">
+                  Đương đại
+                </span>
               </div>
             </div>
             <p className="max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/50">
-              Mọi tác phẩm tại đây đều được giám định và gắn mã định danh
-              di sản. Nhấp vào mỗi tác phẩm để xem hồ sơ kỷ lục đầy đủ.
+              Mọi tác phẩm tại đây đều được giám định và gắn mã định danh di sản. Nhấp vào mỗi tác
+              phẩm để xem hồ sơ kỷ lục đầy đủ.
             </p>
           </div>
         </section>
@@ -139,9 +207,7 @@ function GalleryPage() {
                       {w.materials.split(" · ")[0]}
                     </p>
                   </div>
-                  <span className="font-display text-sm text-champagne/50">
-                    {w.year}
-                  </span>
+                  <span className="font-display text-sm text-champagne/50">{w.year}</span>
                 </div>
               </button>
             ))}
@@ -220,9 +286,7 @@ function GalleryPage() {
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
                     Mã định danh di sản
                   </p>
-                  <p className="mt-3 font-display text-lg text-champagne">
-                    {active.edition}
-                  </p>
+                  <p className="mt-3 font-display text-lg text-champagne">{active.edition}</p>
                 </div>
               </div>
 

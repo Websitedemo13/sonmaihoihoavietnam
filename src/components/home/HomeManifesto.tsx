@@ -39,10 +39,7 @@ export function HomeManifesto() {
     }`;
 
   return (
-    <section
-      ref={ref}
-      className="relative overflow-hidden px-6 py-10 md:py-14"
-    >
+    <section ref={ref} className="relative overflow-hidden px-6 py-10 md:py-14">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/50 to-transparent" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_50%_50%,rgba(243,229,171,0.05),transparent_70%)]" />
 
@@ -65,9 +62,7 @@ export function HomeManifesto() {
         </div>
 
         {/* World Record Proposal */}
-        <div
-          className={`mx-auto mt-16 max-w-2xl text-center ${slide("delay-150")}`}
-        >
+        <div className={`mx-auto mt-16 max-w-2xl text-center ${slide("delay-150")}`}>
           <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
             Đề Cử Kỷ Lục Thế Giới
           </p>
@@ -77,8 +72,8 @@ export function HomeManifesto() {
             đổi mới Nghệ thuật Sơn Mài Hội Hoạ
           </h2>
           <p className="mx-auto mt-6 max-w-[58ch] font-sans text-[13px] leading-[2] tracking-[0.08em] text-foreground/85 md:text-sm">
-            Một hồ sơ đề cử trang trọng — đưa sơn mài Việt trở thành ngôn ngữ
-            nghệ thuật quốc gia đầu tiên được ghi danh trên bản đồ kỷ lục thế giới.
+            Một hồ sơ đề cử trang trọng — đưa sơn mài Việt trở thành ngôn ngữ nghệ thuật quốc gia
+            đầu tiên được ghi danh trên bản đồ kỷ lục thế giới.
           </p>
         </div>
 
@@ -95,9 +90,7 @@ export function HomeManifesto() {
                 key={p.n}
                 className={`relative bg-black p-8 md:p-10 ${slide(`delay-[${250 + i * 80}ms]`)}`}
               >
-                <p className="font-display text-[11px] tracking-cinzel text-crimson">
-                  {p.n}
-                </p>
+                <p className="font-display text-[11px] tracking-cinzel text-crimson">{p.n}</p>
                 <h3 className="font-display mt-4 text-base leading-[1.3] tracking-cinzel text-champagne md:text-lg">
                   {p.title}
                 </h3>
@@ -138,9 +131,7 @@ export function HomeManifesto() {
               <p className="mt-3 font-sans text-[13px] leading-[1.7] tracking-[0.08em] text-foreground/90">
                 Saigon Innovation Hub (SIHUB)
                 <br />
-                <span className="text-foreground/65">
-                  123 Trương Định, TP. Hồ Chí Minh
-                </span>
+                <span className="text-foreground/65">123 Trương Định, TP. Hồ Chí Minh</span>
               </p>
             </div>
           </div>

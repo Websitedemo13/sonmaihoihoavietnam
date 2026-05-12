@@ -15,8 +15,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Ghi danh vào Lịch sử · Sơn Mài Di Sản" },
       {
         property: "og:description",
-        content:
-          "Kết nối với di sản — Studio Sơn Mài tại Hà Nội. Mở cửa theo lịch hẹn.",
+        content: "Kết nối với di sản — Studio Sơn Mài tại Hà Nội. Mở cửa theo lịch hẹn.",
       },
     ],
   }),
@@ -58,10 +57,9 @@ function ContactPage() {
             Kết Nối <span className="italic text-shimmer">Di Sản</span>
           </h1>
           <p className="mx-auto mt-12 max-w-[52ch] text-xs leading-loose tracking-[0.15em] text-champagne/55">
-            "Mọi hành trình kỷ lục đều bắt đầu từ một cuộc trò chuyện. Hãy
-            cùng chúng tôi viết nên chương tiếp theo của sơn mài Việt Nam."
-            Mọi lời nhắn gửi đều được đọc và trân trọng — không có cuộc kết
-            nối nào là nhỏ.
+            "Mọi hành trình kỷ lục đều bắt đầu từ một cuộc trò chuyện. Hãy cùng chúng tôi viết nên
+            chương tiếp theo của sơn mài Việt Nam." Mọi lời nhắn gửi đều được đọc và trân trọng —
+            không có cuộc kết nối nào là nhỏ.
           </p>
         </section>
 
@@ -132,9 +130,7 @@ function ContactPage() {
                     <div className="absolute inset-1.5 rounded-full border border-champagne/40" />
                     <div className="absolute inset-3 rounded-full border border-champagne/60" />
                     <div className="relative flex flex-col items-center">
-                      <span className="font-display text-2xl text-champagne">
-                        印
-                      </span>
+                      <span className="font-display text-2xl text-champagne">印</span>
                       <span className="font-sans text-[7px] tracking-eyebrow uppercase text-champagne/80">
                         Triện
                       </span>
@@ -184,9 +180,7 @@ function ContactPage() {
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
                     Studio Sơn Mài
                   </p>
-                  <p className="mt-3 font-serif-cap text-[11px] text-champagne">
-                    Hà Nội
-                  </p>
+                  <p className="mt-3 font-serif-cap text-[11px] text-champagne">Hà Nội</p>
                   <p className="mt-2">28 Phố Hàng Khay · Hoàn Kiếm</p>
                   <p className="mt-1 text-champagne/40">Mở cửa theo lịch hẹn</p>
                 </div>
@@ -194,9 +188,7 @@ function ContactPage() {
                   <p className="font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
                     Không gian Số
                   </p>
-                  <p className="mt-3 font-serif-cap text-[11px] text-champagne">
-                    Phản hồi 24h
-                  </p>
+                  <p className="mt-3 font-serif-cap text-[11px] text-champagne">Phản hồi 24h</p>
                   <p className="mt-2">+84 (0) 123 456 789</p>
                   <p className="mt-1">heritage@sonmai.vn</p>
                 </div>

@@ -38,10 +38,7 @@ export function HomeNewsletter() {
     }`;
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative overflow-hidden px-6 py-10 md:py-14"
-    >
+    <section ref={sectionRef} className="relative overflow-hidden px-6 py-10 md:py-14">
       {/* Top & bottom gold threads */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-champagne/60 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-champagne/30 to-transparent" />
@@ -63,8 +60,8 @@ export function HomeNewsletter() {
         <p
           className={`mx-auto mt-5 max-w-[44ch] font-sans text-[13px] leading-[2] tracking-[0.1em] text-foreground/80 md:text-sm ${slide("delay-200")}`}
         >
-          Trở thành một phần của hành trình trăm năm — nơi nhựa sơn,
-          lá vàng và tĩnh lặng cùng viết tiếp di sản.
+          Trở thành một phần của hành trình trăm năm — nơi nhựa sơn, lá vàng và tĩnh lặng cùng viết
+          tiếp di sản.
         </p>
 
         <form
@@ -81,7 +78,9 @@ export function HomeNewsletter() {
               className="absolute inset-0 -translate-x-full bg-gradient-to-r from-[#8a6a1a] via-[#f3dc8a] to-[#8a6a1a] transition-transform duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-0"
             />
             <span className="relative">Theo dõi hành trình</span>
-            <span className="relative font-display transition-transform duration-500 group-hover:translate-x-1">→</span>
+            <span className="relative font-display transition-transform duration-500 group-hover:translate-x-1">
+              →
+            </span>
           </button>
         </form>
 

@@ -15,14 +15,10 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-[1600px] items-center justify-between">
         <Link to="/" className="group flex items-center gap-4">
           <div className="relative flex size-10 items-center justify-center border border-crimson bg-crimson/10 transition-colors duration-700 group-hover:bg-crimson/25">
-            <span className="font-display text-sm font-bold tracking-widest text-champagne">
-              S
-            </span>
+            <span className="font-display text-sm font-bold tracking-widest text-champagne">S</span>
           </div>
           <div className="flex flex-col leading-none">
-            <span className="font-serif-cap text-[10px] text-champagne">
-              Sơn Mài Di Sản
-            </span>
+            <span className="font-serif-cap text-[10px] text-champagne">Sơn Mài Di Sản</span>
             <span className="mt-1 font-sans text-[8px] tracking-eyebrow text-champagne/40 uppercase">
               Kỷ Nguyên · MCMXXIV
             </span>

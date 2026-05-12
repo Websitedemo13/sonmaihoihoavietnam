@@ -42,24 +42,19 @@ export function Hero() {
               className="font-display flex flex-col text-5xl uppercase leading-[0.85] text-champagne md:text-7xl lg:text-[110px]"
               style={{ animation: "blur-in 1.6s 0.3s both" }}
             >
-              <span className="block tracking-tight text-champagne/95">
-                Nghệ Thuật
-              </span>
+              <span className="block tracking-tight text-champagne/95">Nghệ Thuật</span>
               <span className="ml-12 block tracking-tight text-champagne/55 lg:ml-32">
                 Không Chỉ Được Nhìn
               </span>
-              <span className="text-shimmer block tracking-tight">
-                Cảm Từ Tĩnh Lặng
-              </span>
+              <span className="text-shimmer block tracking-tight">Cảm Từ Tĩnh Lặng</span>
             </h1>
 
             <p
               className="mt-16 ml-12 max-w-[44ch] text-xs leading-[2.2] tracking-[0.15em] text-champagne/55 lg:ml-32 lg:text-sm"
               style={{ animation: "fade-up 1.2s 1s both" }}
             >
-              Nơi sơn mài Việt Nam chạm đến linh hồn thời đại. Mỗi tác phẩm
-              là một khoảnh khắc vĩnh cửu — được nuôi dưỡng từ nhựa sơn,
-              ánh vàng và sự tĩnh lặng sâu thẳm nhất.
+              Nơi sơn mài Việt Nam chạm đến linh hồn thời đại. Mỗi tác phẩm là một khoảnh khắc vĩnh
+              cửu — được nuôi dưỡng từ nhựa sơn, ánh vàng và sự tĩnh lặng sâu thẳm nhất.
             </p>
 
             <div

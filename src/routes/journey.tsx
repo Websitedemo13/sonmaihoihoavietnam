@@ -92,10 +92,9 @@ function JourneyPage() {
             <span className="block whitespace-nowrap text-shimmer">Hoàn Mỹ</span>
           </h1>
           <p className="mx-auto mt-12 max-w-[52ch] text-xs leading-loose tracking-[0.15em] text-champagne/55">
-            Năm năm để tạo nên di sản. Trong một thập kỷ tới, chúng tôi
-            biến sơn mài từ một nghệ thuật truyền thống thành biểu tượng
-            của sáng tạo đương đại — mỗi tác phẩm là một câu chuyện, mỗi
-            triển lãm là một sự kiện.
+            Năm năm để tạo nên di sản. Trong một thập kỷ tới, chúng tôi biến sơn mài từ một nghệ
+            thuật truyền thống thành biểu tượng của sáng tạo đương đại — mỗi tác phẩm là một câu
+            chuyện, mỗi triển lãm là một sự kiện.
           </p>
         </section>
 
@@ -119,11 +118,7 @@ function JourneyPage() {
                 <div className="pointer-events-none absolute left-1/2 top-1/2 hidden size-3 -translate-x-1/2 -translate-y-1/2 rotate-45 border border-champagne bg-pitch md:block" />
 
                 {/* Text */}
-                <div
-                  className={`${
-                    m.side === "left" ? "md:order-1 md:text-right" : "md:order-2"
-                  }`}
-                >
+                <div className={`${m.side === "left" ? "md:order-1 md:text-right" : "md:order-2"}`}>
                   <span className="font-display text-7xl text-champagne/15 md:text-8xl">
                     {m.year}
                   </span>

@@ -17,8 +17,8 @@ export function CtaFooter() {
         </h2>
 
         <p className="mx-auto mt-5 max-w-[44ch] font-sans text-[12px] leading-[1.9] tracking-[0.14em] text-champagne/60 md:text-[13px]">
-          Trở thành một phần của hành trình trăm năm — nơi nhựa sơn,
-          lá vàng và tĩnh lặng cùng viết tiếp di sản.
+          Trở thành một phần của hành trình trăm năm — nơi nhựa sơn, lá vàng và tĩnh lặng cùng viết
+          tiếp di sản.
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-4">
@@ -31,7 +31,9 @@ export function CtaFooter() {
               className="absolute inset-0 -translate-x-full bg-gradient-to-r from-[#8a6a1a] via-[#f3dc8a] to-[#8a6a1a] transition-transform duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-x-0"
             />
             <span className="relative">Theo dõi hành trình</span>
-            <span className="relative font-display transition-transform duration-500 group-hover:translate-x-1">→</span>
+            <span className="relative font-display transition-transform duration-500 group-hover:translate-x-1">
+              →
+            </span>
           </Link>
 
           <p className="font-sans text-[9px] tracking-cinzel uppercase text-champagne/35">

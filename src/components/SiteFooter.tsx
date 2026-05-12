@@ -27,9 +27,7 @@ export function SiteFooter() {
               <span className="font-display text-base text-champagne">S</span>
             </div>
             <div>
-              <p className="font-serif-cap text-xs text-champagne">
-                Sơn Mài Di Sản
-              </p>
+              <p className="font-serif-cap text-xs text-champagne">Sơn Mài Di Sản</p>
               <p className="mt-1 font-sans text-[9px] tracking-eyebrow uppercase text-champagne/40">
                 Kỷ Nguyên Trăm Năm
               </p>

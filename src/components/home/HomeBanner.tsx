@@ -21,10 +21,7 @@ export function HomeBanner() {
   }, []);
 
   return (
-    <section
-      ref={ref}
-      className="relative min-h-dvh w-full overflow-hidden"
-    >
+    <section ref={ref} className="relative min-h-dvh w-full overflow-hidden">
       {/* Cinematic background */}
       <div
         className="absolute inset-0 transition-transform duration-[1200ms] ease-out"
@@ -40,10 +37,7 @@ export function HomeBanner() {
           height={1080}
         />
         {/* Slow zoom for cinematic feel */}
-        <div
-          className="absolute inset-0"
-          style={{ animation: "blur-in 2.4s 0.1s both" }}
-        />
+        <div className="absolute inset-0" style={{ animation: "blur-in 2.4s 0.1s both" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/60" />
       </div>
@@ -83,17 +77,15 @@ export function HomeBanner() {
           >
             <span className="block text-champagne/95">Nghệ thuật</span>
             <span className="block text-champagne/55">không chỉ được nhìn</span>
-            <span className="text-shimmer mt-2 block">
-              cảm từ tĩnh lặng
-            </span>
+            <span className="text-shimmer mt-2 block">cảm từ tĩnh lặng</span>
           </h1>
 
           <p
             className="mx-auto mt-8 max-w-xl font-sans text-[12px] leading-[2] tracking-[0.14em] text-foreground/80 md:text-[13px]"
             style={{ animation: "fade-up 1.2s 1s both" }}
           >
-            Một thế kỷ ủ nhựa sơn trong bóng tối — nay bừng sáng cùng thời đại.
-            Mỗi tác phẩm là một khoảnh khắc vĩnh cửu.
+            Một thế kỷ ủ nhựa sơn trong bóng tối — nay bừng sáng cùng thời đại. Mỗi tác phẩm là một
+            khoảnh khắc vĩnh cửu.
           </p>
 
           <div

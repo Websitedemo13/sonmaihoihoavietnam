@@ -14,7 +14,8 @@ export function EssenceQuote() {
 
           <blockquote className="mt-6 text-center font-display text-xl leading-[1.4] tracking-[0.16em] text-champagne md:text-2xl lg:text-[1.75rem]">
             <span className="text-champagne/40">“</span>
-            Chúng tôi không sáng tác — chúng tôi <span className="text-shimmer">kiến tạo</span> ngôn ngữ thị giác riêng biệt
+            Chúng tôi không sáng tác — chúng tôi <span className="text-shimmer">kiến tạo</span> ngôn
+            ngữ thị giác riêng biệt
             <span className="text-champagne/40">.”</span>
           </blockquote>
 

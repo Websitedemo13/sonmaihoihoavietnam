@@ -21,10 +21,7 @@ export function HomeFeatured() {
   }, []);
 
   return (
-    <section
-      ref={ref}
-      className="relative overflow-hidden px-0 py-0"
-    >
+    <section ref={ref} className="relative overflow-hidden px-0 py-0">
       <div className="mx-auto grid min-h-[80dvh] max-w-[1600px] grid-cols-1 md:grid-cols-2">
         {/* Left — large image with parallax */}
         <div className="relative h-[60dvh] overflow-hidden md:h-auto">
@@ -73,8 +70,7 @@ export function HomeFeatured() {
           </div>
 
           <p className="mt-8 max-w-md font-sans text-[13px] leading-[2] tracking-[0.08em] text-foreground/85">
-            Sơn ta · Vàng lá 24K · Vỏ trứng — trên gỗ ván ép truyền thống.
-            120 × 180 cm · Hà Nội.
+            Sơn ta · Vàng lá 24K · Vỏ trứng — trên gỗ ván ép truyền thống. 120 × 180 cm · Hà Nội.
           </p>
 
           <div className="mt-10">

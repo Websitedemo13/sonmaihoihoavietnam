@@ -9,8 +9,7 @@ const posts = [
     img: r1,
     cat: "Suy ngẫm",
     title: "Ánh sáng trong sự tĩnh lặng",
-    excerpt:
-      "Khi bóng tối được nâng niu đủ lâu, ánh vàng tự tìm đường trở về.",
+    excerpt: "Khi bóng tối được nâng niu đủ lâu, ánh vàng tự tìm đường trở về.",
     date: "12 · 04 · 2026",
     hash: "uy-son",
   },
@@ -18,8 +17,7 @@ const posts = [
     img: r2,
     cat: "Chất liệu",
     title: "Khi chất liệu cất lời",
-    excerpt:
-      "Nhựa sơn ta, vỏ trứng, vàng lá — ba ngôn ngữ kể một câu chuyện.",
+    excerpt: "Nhựa sơn ta, vỏ trứng, vàng lá — ba ngôn ngữ kể một câu chuyện.",
     date: "28 · 03 · 2026",
     hash: "chat-lieu",
   },
@@ -27,8 +25,7 @@ const posts = [
     img: r3,
     cat: "Di sản",
     title: "Một thế kỷ trong bóng tối",
-    excerpt:
-      "Trăm năm ủ trong im lặng — để khoảnh khắc bừng sáng được vĩnh cửu.",
+    excerpt: "Trăm năm ủ trong im lặng — để khoảnh khắc bừng sáng được vĩnh cửu.",
     date: "05 · 03 · 2026",
     hash: "ky-luc-100-nam",
   },

@@ -37,10 +37,24 @@ export const Route = createRootRoute({
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:title", content: "SƠN MÀI HỘI HOẠ VIỆT NAM" },
       { name: "twitter:title", content: "SƠN MÀI HỘI HOẠ VIỆT NAM" },
-      { property: "og:description", content: "A century of Vietnamese lacquer mastery — Maison Vũ Gia." },
-      { name: "twitter:description", content: "A century of Vietnamese lacquer mastery — Maison Vũ Gia." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d8adbe2a-b05d-4e2b-9a25-faf8f2380957/id-preview-821add81--b0fea285-8c0f-4e0f-a021-2912ba360c9a.lovable.app-1776764887853.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d8adbe2a-b05d-4e2b-9a25-faf8f2380957/id-preview-821add81--b0fea285-8c0f-4e0f-a021-2912ba360c9a.lovable.app-1776764887853.png" },
+      {
+        property: "og:description",
+        content: "A century of Vietnamese lacquer mastery — Maison Vũ Gia.",
+      },
+      {
+        name: "twitter:description",
+        content: "A century of Vietnamese lacquer mastery — Maison Vũ Gia.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d8adbe2a-b05d-4e2b-9a25-faf8f2380957/id-preview-821add81--b0fea285-8c0f-4e0f-a021-2912ba360c9a.lovable.app-1776764887853.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d8adbe2a-b05d-4e2b-9a25-faf8f2380957/id-preview-821add81--b0fea285-8c0f-4e0f-a021-2912ba360c9a.lovable.app-1776764887853.png",
+      },
     ],
     links: [
       {
@@ -59,9 +73,27 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
-        <link rel="preload" as="image" href="/lacquer-bg-768.webp" type="image/webp" media="(max-width: 767px)" />
-        <link rel="preload" as="image" href="/lacquer-bg-1280.webp" type="image/webp" media="(min-width: 768px) and (max-width: 1279px)" />
-        <link rel="preload" as="image" href="/lacquer-bg-1920.webp" type="image/webp" media="(min-width: 1280px)" />
+        <link
+          rel="preload"
+          as="image"
+          href="/lacquer-bg-768.webp"
+          type="image/webp"
+          media="(max-width: 767px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/lacquer-bg-1280.webp"
+          type="image/webp"
+          media="(min-width: 768px) and (max-width: 1279px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/lacquer-bg-1920.webp"
+          type="image/webp"
+          media="(min-width: 1280px)"
+        />
       </head>
       <body>
         <div className="lacquer-shimmer" aria-hidden />

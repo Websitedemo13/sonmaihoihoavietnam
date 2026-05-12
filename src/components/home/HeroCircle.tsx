@@ -6,10 +6,7 @@ export function HeroCircle() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_50%,rgba(212,175,55,0.05),transparent_70%)]" />
 
       <div className="relative z-10 flex min-h-dvh flex-col items-center justify-center px-6 pt-28 pb-16 md:pt-32">
-        <div
-          className="mb-6 flex items-center gap-3"
-          style={{ animation: "fade-up 1s 0.1s both" }}
-        >
+        <div className="mb-6 flex items-center gap-3" style={{ animation: "fade-up 1s 0.1s both" }}>
           <span className="block h-px w-8 bg-champagne/60" />
           <span className="font-sans text-[10px] tracking-cinzel uppercase text-champagne/70">
             MCMXXIV — MMXXVI · Heritage Edition
@@ -57,8 +54,8 @@ export function HeroCircle() {
           className="mt-8 max-w-[52ch] text-center font-sans text-[12px] leading-[1.9] tracking-[0.18em] text-champagne/60 md:text-[13px]"
           style={{ animation: "fade-up 1s 1s both" }}
         >
-          Một thế kỷ của nhựa sơn, ánh vàng và tĩnh lặng — được nuôi
-          dưỡng trong bóng tối và bừng sáng cùng thời đại.
+          Một thế kỷ của nhựa sơn, ánh vàng và tĩnh lặng — được nuôi dưỡng trong bóng tối và bừng
+          sáng cùng thời đại.
         </p>
 
         <div

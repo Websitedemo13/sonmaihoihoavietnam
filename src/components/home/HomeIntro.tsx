@@ -15,10 +15,7 @@ export function HomeIntro() {
       const r = el.getBoundingClientRect();
       const vh = window.innerHeight;
       // Map scroll progress: start when section enters bottom, end at center
-      const p = Math.max(
-        0,
-        Math.min(1, (vh - r.top) / (vh * 0.85)),
-      );
+      const p = Math.max(0, Math.min(1, (vh - r.top) / (vh * 0.85)));
       setProgress(p);
     };
     onScroll();
@@ -30,10 +27,7 @@ export function HomeIntro() {
   const lit = Math.floor(progress * words.length);
 
   return (
-    <section
-      ref={ref}
-      className="relative px-6 py-10 md:py-14"
-    >
+    <section ref={ref} className="relative px-6 py-10 md:py-14">
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-16">
         {/* Left — image */}
         <div className="md:col-span-5">
@@ -69,10 +63,7 @@ export function HomeIntro() {
                 key={i}
                 className="transition-colors duration-500"
                 style={{
-                  color:
-                    i < lit
-                      ? "#F9F9F9"
-                      : "rgba(243,229,171,0.28)",
+                  color: i < lit ? "#F9F9F9" : "rgba(243,229,171,0.28)",
                 }}
               >
                 {w}{" "}

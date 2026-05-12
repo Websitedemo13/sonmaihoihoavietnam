@@ -19,8 +19,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "Giới Thiệu · Hành Trình 100 Năm Sơn Mài" },
       {
         property: "og:description",
-        content:
-          "Khung tròn di sản, dòng chảy kỷ lục và ba chứng nhân di sản — phiên bản 100 năm.",
+        content: "Khung tròn di sản, dòng chảy kỷ lục và ba chứng nhân di sản — phiên bản 100 năm.",
       },
     ],
   }),

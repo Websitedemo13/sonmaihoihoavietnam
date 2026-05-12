@@ -44,8 +44,8 @@ function JournalPage() {
               Sảnh <span className="italic text-shimmer">Kiến Thức</span>
             </h1>
             <p className="mt-12 max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/50">
-              Kể chuyện 100 năm · Đối thoại với bóng tối · Giao thoa di sản —
-              nơi những bài viết chuyên sâu được trình bày như các bức tranh.
+              Kể chuyện 100 năm · Đối thoại với bóng tối · Giao thoa di sản — nơi những bài viết
+              chuyên sâu được trình bày như các bức tranh.
             </p>
           </div>
         </section>
@@ -64,10 +64,9 @@ function JournalPage() {
                   <span className="italic text-champagne/60">Uỷ Sơn</span>
                 </h2>
                 <p className="mt-10 max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/55">
-                  Khám phá quy trình ủ sơn truyền thống — nơi màu sắc được
-                  sinh ra từ <em className="not-italic text-champagne">bóng tối</em>. Ánh sáng
-                  trong sự tĩnh lặng, khi mọi chuyển động dừng lại, ánh sáng
-                  bắt đầu kể chuyện.
+                  Khám phá quy trình ủ sơn truyền thống — nơi màu sắc được sinh ra từ{" "}
+                  <em className="not-italic text-champagne">bóng tối</em>. Ánh sáng trong sự tĩnh
+                  lặng, khi mọi chuyển động dừng lại, ánh sáng bắt đầu kể chuyện.
                 </p>
                 <button className="mt-12 font-sans text-[9px] tracking-luxury uppercase text-champagne/60 transition-colors hover:text-champagne">
                   Đọc bài →
@@ -75,7 +74,14 @@ function JournalPage() {
               </div>
               <div className="col-span-12 md:col-span-6 md:col-start-7">
                 <div className="relative aspect-[3/4] overflow-hidden ring-1 ring-champagne/10 transition-all duration-700 hover:ring-champagne/40">
-                  <img src={forest} alt="" loading="lazy" width={1024} height={1280} className="h-full w-full object-cover" />
+                  <img
+                    src={forest}
+                    alt=""
+                    loading="lazy"
+                    width={1024}
+                    height={1280}
+                    className="h-full w-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-pitch/60 via-transparent to-transparent" />
                 </div>
               </div>
@@ -100,7 +106,14 @@ function JournalPage() {
             <article id="chat-lieu" className="grid grid-cols-12 gap-8 scroll-mt-32">
               <div className="col-span-12 md:col-span-7">
                 <div className="relative aspect-[4/5] overflow-hidden ring-1 ring-champagne/10">
-                  <img src={artisan} alt="" loading="lazy" width={1024} height={1280} className="h-full w-full object-cover" />
+                  <img
+                    src={artisan}
+                    alt=""
+                    loading="lazy"
+                    width={1024}
+                    height={1280}
+                    className="h-full w-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-tr from-pitch/40 via-transparent to-transparent" />
                 </div>
               </div>
@@ -113,9 +126,8 @@ function JournalPage() {
                     Khi Chất Liệu <br /> <span className="italic text-champagne/60">Cất Lời</span>
                   </h2>
                   <p className="mt-8 text-xs leading-loose tracking-[0.12em] text-champagne/55">
-                    Nhựa sơn không chỉ là vật liệu — đó là ngôn ngữ. Mỗi
-                    lớp sơn là một câu, mỗi tác phẩm hoàn chỉnh là một bài
-                    thơ về căn tính dân tộc.
+                    Nhựa sơn không chỉ là vật liệu — đó là ngôn ngữ. Mỗi lớp sơn là một câu, mỗi tác
+                    phẩm hoàn chỉnh là một bài thơ về căn tính dân tộc.
                   </p>
                   <button className="mt-10 font-sans text-[9px] tracking-luxury uppercase text-champagne/60 transition-colors hover:text-champagne">
                     Đọc bài →
@@ -128,7 +140,14 @@ function JournalPage() {
             <article className="grid grid-cols-12 items-center gap-8">
               <div className="col-span-12 md:col-span-7">
                 <div className="relative aspect-[4/3] overflow-hidden ring-1 ring-champagne/10">
-                  <img src={panel} alt="" loading="lazy" width={1024} height={1024} className="h-full w-full object-cover" />
+                  <img
+                    src={panel}
+                    alt=""
+                    loading="lazy"
+                    width={1024}
+                    height={1024}
+                    className="h-full w-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-l from-pitch/30 to-transparent" />
                 </div>
               </div>
@@ -140,31 +159,41 @@ function JournalPage() {
                   Màu Cánh Gián <br /> <span className="italic text-champagne/60">Biểu Tượng</span>
                 </h2>
                 <p className="mt-8 max-w-md text-xs leading-loose tracking-[0.12em] text-champagne/55">
-                  Khám phá nguồn gốc và quy trình tạo ra màu cánh gián —
-                  biểu tượng của sơn mài Việt Nam. Hướng dẫn chi tiết để
-                  phân biệt sơn ta thật, từ độ bóng đến cảm giác khi chạm.
+                  Khám phá nguồn gốc và quy trình tạo ra màu cánh gián — biểu tượng của sơn mài Việt
+                  Nam. Hướng dẫn chi tiết để phân biệt sơn ta thật, từ độ bóng đến cảm giác khi
+                  chạm.
                 </p>
               </div>
             </article>
 
             {/* Article 4 */}
-            <article id="ky-luc-100-nam" className="mx-auto grid max-w-5xl grid-cols-12 items-end gap-8 scroll-mt-32">
+            <article
+              id="ky-luc-100-nam"
+              className="mx-auto grid max-w-5xl grid-cols-12 items-end gap-8 scroll-mt-32"
+            >
               <div className="col-span-12 md:col-span-5">
                 <p className="font-sans text-[9px] tracking-eyebrow uppercase text-crimson">
                   Giao thoa di sản · 04
                 </p>
                 <h2 className="font-display mt-6 text-3xl uppercase leading-[1.1] text-champagne md:text-5xl">
-                  Kỷ Lục <br /><span className="italic text-champagne/60">100 Năm</span>
+                  Kỷ Lục <br />
+                  <span className="italic text-champagne/60">100 Năm</span>
                 </h2>
                 <p className="mt-8 text-xs leading-loose tracking-[0.12em] text-champagne/55">
-                  Hành trình của sơn mài Việt Nam qua 100 năm — từ Cao đẳng
-                  Mỹ thuật Đông Dương đến ngày hôm nay. Nơi 100 năm tinh
-                  hoa gặp gỡ tư duy thế kỷ XXI.
+                  Hành trình của sơn mài Việt Nam qua 100 năm — từ Cao đẳng Mỹ thuật Đông Dương đến
+                  ngày hôm nay. Nơi 100 năm tinh hoa gặp gỡ tư duy thế kỷ XXI.
                 </p>
               </div>
               <div className="col-span-12 md:col-span-6 md:col-start-7">
                 <div className="relative aspect-[3/4] overflow-hidden ring-1 ring-champagne/10">
-                  <img src={g3} alt="" loading="lazy" width={1024} height={1536} className="h-full w-full object-cover" />
+                  <img
+                    src={g3}
+                    alt=""
+                    loading="lazy"
+                    width={1024}
+                    height={1536}
+                    className="h-full w-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-pitch/30 mix-blend-multiply" />
                 </div>
               </div>

@@ -44,8 +44,8 @@ export function AboutStory() {
             Di sản qua <span className="text-champagne/55">ba lát cắt</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl font-sans text-[12px] leading-[1.9] tracking-[0.1em] text-champagne/50">
-            Xưởng — Bàn tay — Chất liệu. Ba chương kể câu chuyện về một thế kỷ
-            sơn mài Việt Nam được giữ gìn và tái sinh.
+            Xưởng — Bàn tay — Chất liệu. Ba chương kể câu chuyện về một thế kỷ sơn mài Việt Nam được
+            giữ gìn và tái sinh.
           </p>
         </div>
 
@@ -55,9 +55,7 @@ export function AboutStory() {
               key={c.n}
               className="grid grid-cols-1 items-center gap-8 md:grid-cols-12 md:gap-14"
             >
-              <div
-                className={`md:col-span-7 ${i % 2 === 1 ? "md:order-2" : ""}`}
-              >
+              <div className={`md:col-span-7 ${i % 2 === 1 ? "md:order-2" : ""}`}>
                 <figure
                   className={`relative ${c.ratio} overflow-hidden bg-black ring-1 ring-champagne/15 transition-all duration-700 hover:ring-champagne/40`}
                 >
@@ -74,9 +72,7 @@ export function AboutStory() {
 
               <div className={`md:col-span-5 ${i % 2 === 1 ? "md:order-1" : ""}`}>
                 <div className="flex items-baseline gap-4">
-                  <span className="font-display text-3xl text-champagne/40">
-                    {c.n}
-                  </span>
+                  <span className="font-display text-3xl text-champagne/40">{c.n}</span>
                   <span className="font-sans text-[9px] tracking-cinzel uppercase text-crimson">
                     {c.label}
                   </span>
