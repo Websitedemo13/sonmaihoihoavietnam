@@ -1,3 +1,4 @@
+//D:\JOBS\sonmaihoihoavietnam\src\components\home\AboutStory.tsx
 import atelier from "@/assets/about-atelier.jpg";
 import hands from "@/assets/about-hands.jpg";
 import material from "@/assets/about-material.jpg";
